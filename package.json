@@ -1,0 +1,25 @@
+{
+  "name": "htdocs",
+  "version": "1.0.0",
+  "description": "mspr-wis2",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Kelvinfbt/mspr-wis2.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Kelvinfbt/mspr-wis2/issues"
+  },
+  "homepage": "https://github.com/Kelvinfbt/mspr-wis2#readme",
+  "devDependencies": {
+    "laravel": "^0.0.1"
+  },
+  "dependencies": {
+    "bootstrap": "^5.1.3"
+  }
+}
