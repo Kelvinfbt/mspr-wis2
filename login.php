@@ -1,7 +1,7 @@
 <?php require "template-parts/layout/head.php" ?>
 
-<div class="container">
-    <div class="card mt-5">
+<div class="container ">
+    <div class="card mt-5 w-75">
         <div class="card-body">
             <div class="row">
                 <div class="col-sm-6">
@@ -21,7 +21,7 @@
                             <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Mot de Passe">
                         </div>
                         <div class="d-grid gap-2">
-                        <button type="submit" class="button-login">Se connecter</button>
+                        <button type="submit" class="btn btn-dark">Se connecter</button>
                 </div>
                 </form>
             </div>
