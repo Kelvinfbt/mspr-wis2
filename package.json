@@ -17,7 +17,11 @@
   },
   "homepage": "https://github.com/Kelvinfbt/mspr-wis2#readme",
   "devDependencies": {
-    "laravel": "^0.0.1"
+    "laravel": "^0.0.1",
+    "laravel-mix": "^6.0.39",
+    "resolve-url-loader": "^4.0.0",
+    "sass": "^1.45.0",
+    "sass-loader": "^12.4.0"
   },
   "dependencies": {
     "bootstrap": "^5.1.3"
