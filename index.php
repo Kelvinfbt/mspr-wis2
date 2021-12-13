@@ -1,27 +1,22 @@
 <?php require_once 'template-parts/layout/head.php' ?>
 
-<main>
+<main id="home">
 
-    <div class="container">
-        <div class="row">
-            <div class="col py-3">
-                <div class="profil">
-                    <img class="img-profil" src="https://via.placeholder.com/200" alt="">
-                        <h5 class="card-title">Coline Cabus</h5>
-                        <p class="card-text">Sportive, aime la course blabla</p>
-                </div>
-                <div class="card shadow">
-                    <h5 class="card-title">Recommandé pour vous</h5>
-                    <div class="list-group">
-                        <a href="#" class="list-group-item list-group-item-action">azerty</a>
-                        <a href="#" class="list-group-item list-group-item-action">azerty</a>
-                        <a href="#" class="list-group-item list-group-item-action">azerty</a>
-                        <a href="#" class="list-group-item list-group-item-action">azerty</a>
-                    </div>
-                </div>
-            </div>
+    <section>
 
-            <div class="col-6 py-3">
+        <div class="container">
+            <div class="row g-3">
+                <div class="col-lg" style="max-width: 280px;">
+                    <?php require_once 'template-parts/layout/sidebar-menu.php'; ?>
+                </div>
+            <div class="col-6">
+                <div>
+                    <form class="d-flex py-3">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn shadow text-light bg-dark" type="submit">Search</button>
+                    </form>
+                </div>
+
                 <div class="card mb-3 shadow">
                     <img src="https://via.placeholder.com/100x50" class="card-img-top" alt="...">
                     <div class="card-body">
@@ -34,14 +29,14 @@
                     </div>
                 </div>
             </div>
-            <div class="col py-3">
+            <div class="col">
                 <div class="card shadow mb-3">
                     <h5>Notifications récentes</h5>
                     <div class="list-group">
-                        <a href="#" class="list-group-item list-group-item-action py-3">Noah Guillet</a>
-                        <a href="#" class="list-group-item list-group-item-action py-3">Dorian Candy</a>
-                        <a href="#" class="list-group-item list-group-item-action py-3">Kelvin Fabert</a>
-                        <a href="#" class="list-group-item list-group-item-action py-3">Luka Sarazin</a>
+                        <a href="#" class="list-group-item list-group-item-action py-3">Notification 1</a>
+                        <a href="#" class="list-group-item list-group-item-action py-3">Notification 2</a>
+                        <a href="#" class="list-group-item list-group-item-action py-3">Notification 3</a>
+                        <a href="#" class="list-group-item list-group-item-action py-3">Notification 4</a>
                     </div>
                 </div>
 
@@ -56,6 +51,5 @@
                 </div>
             </div>
         </div>
-    </div>
-
+    </section>
 </main>

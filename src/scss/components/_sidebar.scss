@@ -1,0 +1,40 @@
+#sidebar {
+
+  .site-brand {
+    display: inline-block;
+    text-decoration: none;
+    color: inherit;
+    padding: 0.5rem;
+  }
+  ul {
+    padding-left: 0;
+    margin-top: 5px;
+    margin-bottom: 0;
+    list-style: none;
+
+    li {
+      padding: 4px 0;
+
+      a {
+        display: inline-block;
+        text-decoration: none;
+        color: inherit;
+        padding: .75rem;
+        font-size: 20px;
+        border-radius: 50rem;
+        transition: $transition-base;
+
+        &:hover {
+          background-color: $light;
+          transition: $transition-base;
+        }
+      }
+
+      .link-wrapper {
+        display: flex;
+        align-content: center;
+        align-items: center;
+      }
+    }
+  }
+}
