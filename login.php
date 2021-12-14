@@ -22,7 +22,7 @@
                                 <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Mot de Passe">
                             </div>
                             <div class="d-grid gap-2">
-                                <button type="submit" class="btn btn-dark">Se connecter</button>
+                                <button type="submit" class="btn btn-light text-white">Se connecter</button>
                             </div>
                         </form>
                     </div>

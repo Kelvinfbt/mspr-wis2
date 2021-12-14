@@ -12,7 +12,7 @@
                 <div>
                     <form class="d-flex py-3">
                         <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                        <button class="btn text-light bg-dark" type="submit">Search</button>
+                        <button class="btn text-white bg-light" type="submit">Search</button>
                     </form>
                 </div>
 
@@ -55,3 +55,5 @@
 
 
 </main>
+
+<?php require "template-parts/layout/footer.php" ?>
