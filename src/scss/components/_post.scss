@@ -1,15 +1,34 @@
 #section_post {
 
-  .container_post {
+  .container {
+    width: 50%;
 
     .form_post {
+      border: 1px solid black;
+      box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+      transition: 0.3s;
+      border-radius: 5px;
+      .row_post {
+        .col_post {
 
-      border: 2px solid red;
 
-      .row_post{
+          .card_post {
+            border-radius: 15px;
+            height: 40px;
+            margin: 8px 0 8px 0;
+            background-color: #f8f9fa;
 
-        border: 2px solid blue;
+            .body_post {
 
+              height: 40px;
+              margin-left: 5px;
+
+              img {
+                margin-right: 5px;
+              }
+            }
+          }
+        }
       }
     }
   }
