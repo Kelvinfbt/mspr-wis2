@@ -1,8 +1,8 @@
-<?php //require "template-parts/layout/head.php" ?>
+<?php require "template-parts/layout/head.php" ?>
 
-<!-- <section id="register-form">
+<section id="register-form">
     <div class="container container_register">
-        <div class="card mt-5">
+        <div class="card mx-auto shadow mt-5">
             <div class="card-body">
                 <div class="row">
                     <div class="col-sm-6">
@@ -44,10 +44,9 @@
                 </div>
             </div>
         </div>
-</section> -->
+</section>
 
-<?php //require "template-parts/layout/footer.php" ?>
-
+<?php require "template-parts/layout/footer.php" ?>
 
 <?php
 

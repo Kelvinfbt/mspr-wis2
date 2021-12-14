@@ -1,7 +1,9 @@
+<?php require_once 'template-parts/layout/head.php' ?>
+
 
 <section id="login-form">
     <div class="container container_login">
-        <div class="card mt-5">
+        <div class="card mx-auto shadow mt-5">
             <div class="card-body">
                 <div class="row">
                     <div class="col-sm-6">
