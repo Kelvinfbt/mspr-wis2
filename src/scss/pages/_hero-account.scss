@@ -1,0 +1,42 @@
+#hero-account {
+
+  .container {
+
+
+    .row {
+
+
+      .col-md-3 {
+
+        border: 1px solid red;
+
+        .images {
+          border-radius: 50%;
+        }
+      }
+
+      .col-md-7{
+        border: 1px solid green;
+
+        .btn-account {
+
+          margin-left: 50px;
+
+          .btn:hover
+          {
+            text-decoration: underline;
+            color: #219EBC;
+          }
+        }
+      }
+
+      .col-md-2 {
+        border: 1px solid darkviolet;
+
+        .btn-edit {
+          margin-top: 50px;
+        }
+      }
+    }
+  }
+}

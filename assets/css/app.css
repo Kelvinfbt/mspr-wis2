@@ -11368,14 +11368,30 @@ textarea.form-control-lg {
   align-items: center;
 }
 
-.images {
+#hero-account .container .row .col-md-3 {
+  border: 1px solid red;
+}
+#hero-account .container .row .col-md-3 .images {
   border-radius: 50%;
 }
-
-.container_account {
-  margin-left: 0;
+#hero-account .container .row .col-md-7 {
+  border: 1px solid green;
+}
+#hero-account .container .row .col-md-7 .btn-account {
+  margin-left: 50px;
+}
+#hero-account .container .row .col-md-7 .btn-account .btn:hover {
+  text-decoration: underline;
+  color: #219EBC;
+}
+#hero-account .container .row .col-md-2 {
+  border: 1px solid darkviolet;
+}
+#hero-account .container .row .col-md-2 .btn-edit {
+  margin-top: 50px;
 }
 
-.card-info {
-  margin-left: 0;
+#main-account .container .row .col-3 .container_account {
+  position: relative;
+  right: 55px;
 }
