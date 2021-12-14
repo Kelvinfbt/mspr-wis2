@@ -11324,6 +11324,7 @@ textarea.form-control-lg {
   margin-left: auto;
   margin-right: auto;
   width: 900px;
+  padding-top: 100px;
 }
 
 #register-form {
@@ -11369,4 +11370,12 @@ textarea.form-control-lg {
 
 .images {
   border-radius: 50%;
+}
+
+.container_account {
+  margin-left: 0;
+}
+
+.card-info {
+  margin-left: 0;
 }
