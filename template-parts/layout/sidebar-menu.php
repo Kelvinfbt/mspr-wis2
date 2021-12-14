@@ -1,11 +1,5 @@
 <nav id="sidebar">
 
-    <h1>
-        <a href="/" class="site-brand">
-            <span class="visually-hidden">BodyUp</span>
-        </a>
-    </h1>
-
     <ul class="list-group">
         <li class="list-group-item">
             <a href="/">

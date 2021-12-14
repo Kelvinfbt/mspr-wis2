@@ -22,12 +22,7 @@
         padding: .75rem;
         font-size: 20px;
         border-radius: 50rem;
-        transition: $transition-base;
 
-        &:hover {
-          background-color: $light;
-          transition: $transition-base;
-        }
       }
 
       .link-wrapper {
