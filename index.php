@@ -11,6 +11,7 @@
                     <?php require_once 'template-parts/layout/sidebar-menu.php'; ?>
                 </div>
 
+                    <?php require_once 'template-parts/post.php'; ?>
                 <div class="col-6">
                     <div>
                         <form class="d-flex py-3">
@@ -32,7 +33,6 @@
                             <p class="card-text"><small class="text-muted">il y a 10 min</small></p>
                         </div>
                     </div>
-                </div>
 
 
                 <div class="list col py-3">

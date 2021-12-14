@@ -1,77 +1,48 @@
-<?php require "../template-parts/layout/head.php" ?>
+<form id="post_form">
+    <span class="h2">Ajouter un nouveau post</span>
 
-<section id="section_post">
-
-    <div class="container container_post">
-        <div class="form-floating form_post ">
-            <h1 class="h2 text-center p-2">Ajouter un nouveau post</h1>
-            <label for="floatingTextarea2"></label>
-            <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2"
-                      style="height: 100px"></textarea>
-            <div class="row row_post">
-                <div class="col_post col-sm-6">
-                    <div class="card_post">
-                        <div class="body_post">
-                           <img alt="" src="/assets/images/image.png"
-                                width="30px"
-                                height="30px">
-                                Photos/Vidéos
-                        </div>
-                    </div>
-                </div>
-                <div class="col_post col-sm-6">
-                    <div class="card_post">
-                        <div class="body_post">
-                            <img alt="" src="/assets/images/tag.png"
-                                 width="30px"
-                                 height="30px">
-                            Tagguer un ami
-                        </div>
-                    </div>
-                </div>
-                <div class="col_post col-sm-6">
-                    <div class="card_post">
-                        <div class="body_post">
-                            <img alt="" src="/assets/images/motivation.png"
-                                 width="30px"
-                                 height="30px">
-                            Votre motivation
-                        </div>
-                    </div>
-                </div>
-                <div class="col_post col-sm-6">
-                    <div class="card_post">
-                        <div class="body_post">
-                            <img alt="" src="/assets/images/lieu.png"
-                                 width="30px"
-                                 height="30px">
-                           Lieu
-                        </div>
-                    </div>
-                </div>
-                <div class="col_post col-sm-6">
-                    <div class="card_post">
-                        <div class="body_post">
-                            <img alt="" src="/assets/images/gif.png"
-                                 width="30px"
-                                 height="30px">
-                            Gif
-                        </div>
-                    </div>
-                </div>
-                <div class="col_post col-sm-6">
-                    <div class="card_post">
-                        <div class="body_post">
-                            <img alt="" src="/assets/images/smile.png"
-                                 width="30px"
-                                 height="30px">
-                            Smiley
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+    <div class="form-group mb-3">
+        <label for="body"></label>
+        <textarea class="form-control" placeholder="Leave a comment here" id="body"></textarea>
     </div>
 
-
-</section>
+    <div class="row g-1">
+        <div class="col-md-6">
+            <button class="btn btn-outline-secondary w-100">
+                <img alt="" src="/assets/images/image.png" width="30px" height="30px" loading="lazy">
+                <span>Photos/Vidéos</span>
+            </button>
+        </div>
+        <div class="col-md-6">
+            <button class="btn btn-outline-secondary w-100">
+                <img alt="" src="/assets/images/tag.png" width="30px" height="30px" loading="lazy">
+                <span>Tagguer un ami</span>
+            </button>
+        </div>
+        <div class="col-md-6">
+            <button class="btn btn-outline-secondary w-100">
+            <img alt="" src="/assets/images/motivation.png" width="30px" height="30px" loading="lazy">
+            <span>Votre motivation</span>
+            </button>
+        </div>
+        <div class="col-md-6">
+            <button class="btn btn-outline-secondary w-100">
+            <img alt="" src="/assets/images/lieu.png" width="30px" height="30px" loading="lazy">
+            <span>Lieu</span>
+            </button>
+        </div>
+        <div class="col-md-6">
+            <button class="btn btn-outline-secondary w-100">
+            <img alt="" src="/assets/images/gif.png" width="30px" height="30px" loading="lazy">
+            <span>Gif</span>
+            </button>
+        </div>
+        <div class="col-md-6">
+            <button class="btn btn-outline-secondary w-100">
+            <img alt="" src="/assets/images/smile.png" width="30px" height="30px" loading="lazy">
+            <span>Smiley</span>
+            </button>
+        </div>
+    </div>
+    <button class="btn btn-outline-primary">Publier</button>
+</form>
