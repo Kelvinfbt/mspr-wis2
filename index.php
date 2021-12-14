@@ -55,3 +55,5 @@
 
 
 </main>
+
+<?php require_once 'template-parts/layout/footer.php' ?>
