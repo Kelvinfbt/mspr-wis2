@@ -12,12 +12,12 @@
                 <div>
                     <form class="d-flex py-3">
                         <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                        <button class="btn text-light bg-dark" type="submit">Search</button>
+                        <button class="btn text-white bg-light" type="submit">Search</button>
                     </form>
                 </div>
 
                 <div class="card mb-3">
-                    <img src="https://via.placeholder.com/100x50" class="card-img-top" alt="">
+                    <img src="assets/images/musculation.jpg" class="card-img-top" alt="">
                     <div class="card-body">
                         <h5 class="card-title">Nouvelle séance du jour</h5>
                         <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur
@@ -55,3 +55,5 @@
 
 
 </main>
+
+<?php require "template-parts/layout/footer.php" ?>

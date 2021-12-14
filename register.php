@@ -33,7 +33,7 @@
                                 <input type="checkbox" class="form-check-input" id="exampleCheck1">
                                 <label class="form-check-label" for="exampleCheck1">J'accepte les termes et conditions</label>
                                 <div class="d-grid gap-2 mt-3">
-                                    <button type="submit" class="btn btn-dark">S'enregistrer</button>
+                                    <button type="submit" class="btn btn-light text-white">S'enregistrer</button>
                                 </div>
                         </form>
                     </div>
