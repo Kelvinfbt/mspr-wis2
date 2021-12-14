@@ -17,7 +17,7 @@
                 </div>
 
                 <div class="card mb-3">
-                    <img src="https://via.placeholder.com/100x50" class="card-img-top" alt="">
+                    <img src="assets/images/musculation.jpg" class="card-img-top" alt="">
                     <div class="card-body">
                         <h5 class="card-title">Nouvelle séance du jour</h5>
                         <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur
