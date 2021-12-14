@@ -1,4 +1,3 @@
-<?php require "template-parts/layout/head.php" ?>
 
 <section id="login-form">
     <div class="container container_login">

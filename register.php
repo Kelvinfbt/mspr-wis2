@@ -19,7 +19,7 @@
                             </div>
                             <div class="mb-3">
                                 <label for="exampleInputEmail1" class="form-label"></label>
-                                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Confirmer votre Email">
+                                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Confirmez votre Email">
                             </div>
                             <div class="mb-3">
                                 <label for="exampleInputPassword1" class="form-label"></label>
@@ -27,11 +27,15 @@
                             </div>
                             <div class="mb-3">
                                 <label for="exampleInputPassword1" class="form-label"></label>
-                                <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Confirmer votre Mot de Passe">
+                                <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Confirmez votre Mot de Passe">
                             </div>
+
+                            <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+                            <label class="form-check-label" for="invalidCheck">
+                                J'accepte les termes et conditions
+                            </label>
+
                             <div class="mb-3 form-check">
-                                <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                                <label class="form-check-label" for="exampleCheck1">J'accepte les termes et conditions</label>
                                 <div class="d-grid gap-2 mt-3">
                                     <button type="submit" class="btn btn-light text-white">S'enregistrer</button>
                                 </div>

@@ -1,9 +1,8 @@
 <form id="post_form">
-    <span class="h2">Ajouter un nouveau post</span>
 
     <div class="form-group mb-3">
         <label for="body"></label>
-        <textarea class="form-control" placeholder="Leave a comment here" id="body"></textarea>
+        <textarea class="form-control" placeholder="Ajouter un nouveau post" id="body"></textarea>
     </div>
 
 
@@ -118,7 +117,7 @@
 
 
     </div>
-    <button class="btn btn-outline-primary">Publier</button>
+    <button class="btn btn-outline-primary mt-3">Publier</button>
 </form>
 
 <script>
