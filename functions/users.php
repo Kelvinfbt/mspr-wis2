@@ -60,6 +60,8 @@ function getUsers()
     return $stmt->fetchAll(PDO::FETCH_ASSOC);
 }
 
+
+
 function storeUser($data)
 {
     $dbh = connectDB();
@@ -74,7 +76,15 @@ function storeUser($data)
 
 function updateUser($id, $data)
 {
+    $dbh = connectDB();
+    $stmt = $dbh->prepare('UPDATE users SET username = :username, email = :email, password = :password, updated_at = NOW() WHERE id = :id');
+    $stmt->bindParam(':id', $id);
+    $stmt->bindParam(':username', $data['username']);
+    $stmt->bindParam(':email', $data['email']);
+    $stmt->bindParam(':password', $data['password']);
+    $stmt->execute();
 
+    return $id;
 }
 
 function delete($id)

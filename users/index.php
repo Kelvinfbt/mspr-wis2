@@ -17,6 +17,7 @@ require_once '../template-parts/layout/header.php'; ?>
                 <th>Username</th>
                 <th>Email</th>
                 <th>Date d'inscription</th>
+                <th>Modifier</th>
             </tr>
             </thead>
 
@@ -27,6 +28,7 @@ require_once '../template-parts/layout/header.php'; ?>
                     <td><?php echo $user['username']; ?></td>
                     <td><?php echo $user['email']; ?></td>
                     <td><?php echo $user['created_at']; ?></td>
+                    <td><a type="button" id="button" href="edit.php?id=<?php echo $user['id'];?>">Modifier</a></td>
                 </tr>
             <?php endforeach; ?>
             </tbody>
