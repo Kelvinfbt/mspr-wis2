@@ -10,7 +10,7 @@ middleware('auth');
     <div>
         <div class="row">
             <div class="col">
-                <?php require_once 'template-parts/layout/sidebar-menu.php'; ?>
+                <?php require_once 'template-parts/layout/sidebar.php'; ?>
             </div>
             <div class="col-6">
 
