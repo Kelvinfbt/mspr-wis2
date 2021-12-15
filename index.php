@@ -1,4 +1,5 @@
-<?php require_once 'template-parts/layout/head.php';
+<?php require_once 'template-parts/layout/head.php';?>
+<?php require_once 'template-parts/layout/navbar.php';
 
 middleware('auth');
 
