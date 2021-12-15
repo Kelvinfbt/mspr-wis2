@@ -2,132 +2,105 @@
 -- version 4.9.3
 -- https://www.phpmyadmin.net/
 --
--- Host: localhost:8889
--- Generation Time: Dec 14, 2021 at 08:29 AM
--- Server version: 5.7.26
--- PHP Version: 7.4.2
+-- Hôte : localhost:8889
+-- Généré le :  mer. 15 déc. 2021 à 11:20
+-- Version du serveur :  5.7.26
+-- Version de PHP :  7.4.2
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET time_zone = "+00:00";
 
 --
--- Database: `ecommerce`
+-- Base de données :  `msprwis2`
 --
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `categories`
+-- Structure de la table `likes`
 --
 
-CREATE TABLE `categories` (
-                              `id` int(11) UNSIGNED NOT NULL,
-                              `name` varchar(255) NOT NULL
+CREATE TABLE `likes` (
+  `id` int(11) NOT NULL,
+  `post_id` int(11) NOT NULL,
+  `user_id` int(11) NOT NULL,
+  `dislikes` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
---
--- Dumping data for table `categories`
---
-
-INSERT INTO `categories` (`id`, `name`) VALUES
-                                            (1, 'Ecigarettes'),
-                                            (2, 'Eliquides');
-
 -- --------------------------------------------------------
 
 --
--- Table structure for table `products`
+-- Structure de la table `posts`
 --
 
-CREATE TABLE `products` (
-                            `id` int(10) UNSIGNED NOT NULL,
-                            `name` varchar(255) NOT NULL,
-                            `description` text NOT NULL,
-                            `price` decimal(6,2) NOT NULL,
-                            `stock` int(10) UNSIGNED NOT NULL,
-                            `categorie_id` int(10) UNSIGNED DEFAULT NULL
+CREATE TABLE `posts` (
+  `id` bigint(20) NOT NULL,
+  `title` varchar(255) NOT NULL,
+  `body` longtext,
+  `published_at` timestamp NULL DEFAULT NULL,
+  `created_at` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  `updated_at` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  `user_id` int(11) NOT NULL,
+  `media` varchar(255) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
---
--- Dumping data for table `products`
---
-
-INSERT INTO `products` (`id`, `name`, `description`, `price`, `stock`, `categorie_id`) VALUES
-                                                                                           (1, 'Kit Aegis LegendA', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eget ligula cursus, vehicula massa quis, viverra risus. Morbi nec laoreet dui. Integer varius lorem tempor, ultrices sem et, volutpat metus.', '67.90', 24, 2),
-                                                                                           (2, 'Kit Aegis LegendDJHSGFJHS', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eget ligula cursus, vehicula massa quis, viverra risus. Morbi nec laoreet dui. Integer varius lorem tempor, ultrices sem et, volutpat metus.', '67.90', 24, 2),
-                                                                                           (3, 'Kit Aegis LegendDJHSGFJHS', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eget ligula cursus, vehicula massa quis, viverra risus. Morbi nec laoreet dui. Integer varius lorem tempor, ultrices sem et, volutpat metus.', '67.90', 24, 2),
-                                                                                           (4, 'Kit Aegis LegendDJHSGFJHS', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eget ligula cursus, vehicula massa quis, viverra risus. Morbi nec laoreet dui. Integer varius lorem tempor, ultrices sem et, volutpat metus.', '67.90', 24, 2),
-                                                                                           (5, 'Kit Aegis LegendDJHSGFJHS', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eget ligula cursus, vehicula massa quis, viverra risus. Morbi nec laoreet dui. Integer varius lorem tempor, ultrices sem et, volutpat metus.', '67.90', 24, 2),
-                                                                                           (6, 'Kit Aegis LegendDJHSGFJHS', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eget ligula cursus, vehicula massa quis, viverra risus. Morbi nec laoreet dui. Integer varius lorem tempor, ultrices sem et, volutpat metus.', '67.90', 24, 2),
-                                                                                           (7, 'Kit Aegis LegendDJHSGFJHS', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eget ligula cursus, vehicula massa quis, viverra risus. Morbi nec laoreet dui. Integer varius lorem tempor, ultrices sem et, volutpat metus.', '67.90', 24, 2),
-                                                                                           (8, 'Kit Aegis LegendDJHSGFJHS', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eget ligula cursus, vehicula massa quis, viverra risus. Morbi nec laoreet dui. Integer varius lorem tempor, ultrices sem et, volutpat metus.', '67.90', 24, 2),
-                                                                                           (9, 'Kit Aegis LegendDJHSGFJHS', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eget ligula cursus, vehicula massa quis, viverra risus. Morbi nec laoreet dui. Integer varius lorem tempor, ultrices sem et, volutpat metus.', '67.90', 24, 2),
-                                                                                           (10, 'Kit Aegis LegendDJHSGFJHS', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eget ligula cursus, vehicula massa quis, viverra risus. Morbi nec laoreet dui. Integer varius lorem tempor, ultrices sem et, volutpat metus.', '67.90', 24, 2),
-                                                                                           (11, 'Kit Aegis LegendDJHSGFJHS', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eget ligula cursus, vehicula massa quis, viverra risus. Morbi nec laoreet dui. Integer varius lorem tempor, ultrices sem et, volutpat metus.', '67.90', 24, 2);
-
 -- --------------------------------------------------------
 
 --
--- Table structure for table `users`
+-- Structure de la table `users`
 --
 
 CREATE TABLE `users` (
-                         `id` int(10) UNSIGNED NOT NULL,
-                         `name` varchar(255) NOT NULL,
-                         `email` varchar(255) NOT NULL,
-                         `password` varchar(255) NOT NULL,
-                         `admin` tinyint(4) NOT NULL
+  `id` bigint(20) NOT NULL,
+  `username` varchar(255) NOT NULL,
+  `first_name` varchar(255) DEFAULT NULL,
+  `last_name` varchar(255) DEFAULT NULL,
+  `email` varchar(255) NOT NULL,
+  `password` varchar(255) NOT NULL,
+  `created_at` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  `updated_at` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  `admin` tinyint(4) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table `users`
+-- Déchargement des données de la table `users`
 --
 
-INSERT INTO `users` (`id`, `name`, `email`, `password`, `admin`) VALUES
-                                                                     (1, 'Test2', 'test@gmail.fr', 'test', 0),
-                                                                     (2, 'test24', 'coline.cabuspro@gmail.com', 'test2', 0),
-                                                                     (3, 'Test Admin', 'admin.test@gmail.com', 'testadmin', 1);
+INSERT INTO `users` (`id`, `username`, `first_name`, `last_name`, `email`, `password`, `created_at`, `updated_at`, `admin`) VALUES
+(1, 'kelvin.fabert', NULL, NULL, 'fabert.kelvin@gmail.com', 'azerty', '2021-12-14 10:40:32', '2021-12-14 10:40:32', 1),
+(2, 'coline', 'coline', 'cabus', 'azerty', 'azerty', '2021-12-14 11:28:41', '2021-12-14 11:28:41', NULL),
+(3, 'kelvin44', NULL, NULL, 'fab@gmail.com', 'e778226c3a53bba4e214ab009a59e96e9a27514909edd1ed2bcd6dcf23b1d66f', '2021-12-14 13:45:37', '2021-12-14 13:45:37', NULL),
+(4, 'azertyhua', NULL, NULL, 'azert@m.com', '9c0ada37bf74aeefae949fdfc90db0cf6eaf90192eff67d65887771f0585e055', '2021-12-14 13:49:29', '2021-12-14 13:49:29', NULL),
+(5, 'azerty', NULL, NULL, 'azerty@gmail.com', 'e778226c3a53bba4e214ab009a59e96e9a27514909edd1ed2bcd6dcf23b1d66f', '2021-12-15 10:40:54', '2021-12-15 10:40:54', NULL);
 
 --
--- Indexes for dumped tables
+-- Index pour les tables déchargées
 --
 
 --
--- Indexes for table `categories`
+-- Index pour la table `posts`
 --
-ALTER TABLE `categories`
-    ADD PRIMARY KEY (`id`);
+ALTER TABLE `posts`
+  ADD PRIMARY KEY (`id`);
 
 --
--- Indexes for table `products`
---
-ALTER TABLE `products`
-    ADD PRIMARY KEY (`id`);
-
---
--- Indexes for table `users`
+-- Index pour la table `users`
 --
 ALTER TABLE `users`
-    ADD PRIMARY KEY (`id`);
+  ADD PRIMARY KEY (`id`);
 
 --
--- AUTO_INCREMENT for dumped tables
+-- AUTO_INCREMENT pour les tables déchargées
 --
 
 --
--- AUTO_INCREMENT for table `categories`
+-- AUTO_INCREMENT pour la table `posts`
 --
-ALTER TABLE `categories`
-    MODIFY `id` int(11) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+ALTER TABLE `posts`
+  MODIFY `id` bigint(20) NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT for table `products`
---
-ALTER TABLE `products`
-    MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
-
---
--- AUTO_INCREMENT for table `users`
+-- AUTO_INCREMENT pour la table `users`
 --
 ALTER TABLE `users`
-    MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `id` bigint(20) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;

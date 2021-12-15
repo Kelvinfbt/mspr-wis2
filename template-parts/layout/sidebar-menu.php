@@ -44,7 +44,7 @@ $auth = getAuth();
         <?php if ($auth): ?>
             <li class="nav-item">
                 <a class="nav-link"
-                   href="/crud/users/show.php"><?php echo $auth['username']; ?></a>
+                   href="/users/show.php"><?php echo $auth['username']; ?></a>
             </li>
             <?php if (isAdmin($auth)): ?>
                 <li class="nav-item">
@@ -61,11 +61,11 @@ $auth = getAuth();
             </li>
         <?php else: ?>
             <li class="nav-item">
-                <a class="nav-link" href="/crud/register.php">Inscription</a>
+                <a class="nav-link" href="/register.php">Inscription</a>
             </li>
 
             <li class="nav-item">
-                <a class="nav-link" href="/crud/login.php">Connexion</a>
+                <a class="nav-link" href="/login.php">Connexion</a>
             </li>
         <?php endif; ?>
     </ul>
