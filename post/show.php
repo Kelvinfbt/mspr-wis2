@@ -9,7 +9,7 @@ $post = getPosts($_GET['id']);
 $author = getPostAuthor($post);
 
 $page = [
-        'body'=>$post['body'],
+    'body'=>$post['body'],
 ];
 
 ?>
@@ -18,7 +18,7 @@ $page = [
     <div class="card mb-3">
         <img src="https://via.placeholder.com/100x50" class="card-img-top" alt="">
         <div class="card-body">
-           <?php echo $post['']; ?>
+            <?php echo $post['']; ?>
             <a href="">Likes</a>
             <p class="card-text"><small class="text-muted">il y a 10 min</small></p>
         </div>
