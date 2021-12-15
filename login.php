@@ -3,7 +3,7 @@
 middleware('guest');
 ?>
     <section id="login-form">
-        <div class="container container_login">
+        <div class="container-fluid container_login">
             <div class="card-body mx-auto shadow mt-5">
                 <div class="row">
                     <div class="col-sm-5">
@@ -30,7 +30,9 @@ middleware('guest');
                                 Rester Connecté
                             </label>
                             <div class="d-grid gap-2">
-                                <button type="submit" class="btn btn-light text-white">Se connecter</button>
+                                <button type="submit" style=" margin-left: 0 ; background-color: #BAEEAE"
+                                        class="w-50 btn btn-login">Se connecter
+                                </button>
                             </div>
                         </form>
                     </div>

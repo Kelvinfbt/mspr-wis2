@@ -1,21 +1,26 @@
 <?php require 'template-parts/layout/head.php';
+require_once './functions/helpers.php';
+require_once './functions/database.php';
+require_once './functions/users.php';
 
 middleware('auth');
-
+$author = getAuth();
 ?>
-
 
 <main id="main">
     <section id="hero-account" class="shadow p-3 mb-5 bg-white rounded">
         <div class="container">
             <div class="row">
                 <div class="col-md-3">
-                    <img class="images" src="https://via.placeholder.com/100" alt="Avatar">
-                    <span>Tom HEZHJ</span>
+                    <img class="images" src="
+                  " alt="Avatar">
+                    <div class="profile-name">
+                        <h1 class="h3"><?php echo $author['username']
+                                ; ?></h1>
+                    </div>
                 </div>
-                <div class="col-md-7">
+                <div class="col-md-7 ">
                     <div class="btn-account position-absolute mt-5">
-
 
                         <button type="button" class="timeline btn">
                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
@@ -28,18 +33,6 @@ middleware('auth');
                             Publications
                         </button>
 
-
-                        <button type="button" class="about btn">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                                 class="bi bi-person-circle" viewBox="0 0 16 16">
-                                <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
-                                <path fill-rule="evenodd"
-                                      d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"/>
-                            </svg>
-                            A propos
-                        </button>
-
-
                         <button type="button" class="friend btn">
                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                                  class="bi bi-people" viewBox="0 0 16 16">
@@ -47,7 +40,6 @@ middleware('auth');
                             </svg>
                             Amies
                         </button>
-
 
                         <button type="button" class="picture btn">
                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
@@ -58,28 +50,18 @@ middleware('auth');
                             Photos
                         </button>
 
-
-                        <button type="button" class="video btn">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                                 class="bi bi-camera-video" viewBox="0 0 16 16">
-                                <path fill-rule="evenodd"
-                                      d="M0 5a2 2 0 0 1 2-2h7.5a2 2 0 0 1 1.983 1.738l3.11-1.382A1 1 0 0 1 16 4.269v7.462a1 1 0 0 1-1.406.913l-3.111-1.382A2 2 0 0 1 9.5 13H2a2 2 0 0 1-2-2V5zm11.5 5.175 3.5 1.556V4.269l-3.5 1.556v4.35zM2 4a1 1 0 0 0-1 1v6a1 1 0 0 0 1 1h7.5a1 1 0 0 0 1-1V5a1 1 0 0 0-1-1H2z"/>
-                            </svg>
-                            Vidéos
-                        </button>
-
                     </div>
                 </div>
                 <div class="col-md-2">
-                    <button type="button" class="btn-edit btn btn-primary">
+                    <a class="btn btn-update" href="api/users/update.php">Modifier mon profil
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                              class="bi bi-pencil-square" viewBox="0 0 16 16">
                             <path d="M15.502 1.94a.5.5 0 0 1 0 .706L14.459 3.69l-2-2L13.502.646a.5.5 0 0 1 .707 0l1.293 1.293zm-1.75 2.456-2-2L4.939 9.21a.5.5 0 0 0-.121.196l-.805 2.414a.25.25 0 0 0 .316.316l2.414-.805a.5.5 0 0 0 .196-.12l6.813-6.814z"/>
                             <path fill-rule="evenodd"
                                   d="M1 13.5A1.5 1.5 0 0 0 2.5 15h11a1.5 1.5 0 0 0 1.5-1.5v-6a.5.5 0 0 0-1 0v6a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 .5-.5H9a.5.5 0 0 0 0-1H2.5A1.5 1.5 0 0 0 1 2.5v11z"/>
                         </svg>
-                        Modifier le profil
-                    </button>
+
+                    </a>
                 </div>
             </div>
     </section>
@@ -118,7 +100,8 @@ middleware('auth');
                 </div>
                 <div class="col-6">
                     <div class="card card-account bg-white mb-3" style="max-width: 2000px;">
-                        <div class="card-header">Nom de l'utilisateur</div>
+                        <div class="card-header text-center"><?php echo $author['username']
+                            ; ?></div>
                         <div class="card-body">
                             <h5 class="card-title">Titre publi</h5>
                             <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. A accusantium

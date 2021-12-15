@@ -20,7 +20,7 @@ middleware('guest');
                         </div>
 
                         <div class="col-sm-6">
-                            <h1 class="text-center mb-5">Bienvenue !</h1>
+                            <h1 class="text-center mt-2">Bienvenue !</h1>
                             <form class="form" action="api/users/store.php" method="post">
 
                                 <div class="mb-3">
@@ -56,8 +56,11 @@ middleware('guest');
 
                                 <div class="mb-3 form-check">
                                     <div class="d-grid gap-2 mt-3">
-                                        <button type="submit" class="btn btn-light text-white">S'enregistrer</button>
+                                        <button type="submit" style=" margin-left: 0 ; background-color: #BAEEAE"
+                                                class="w-50 btn btn-register">S'enregistrer
+                                        </button>
                                     </div>
+                                </div>
                             </form>
                         </div>
                     </div>
