@@ -3,6 +3,7 @@
 require_once '../../functions/helpers.php';
 require_once '../../functions/users.php';
 
+
 // On check si y'a des données
 if (!empty($_POST)) {
 
@@ -22,7 +23,7 @@ if (!empty($_POST)) {
 
     // Check si password = password_confirm
     $password = getValue($_POST['password']);
-    $passwordConfirm = getValue($_POST['password_confirm']);
+    $passwordConfirm = getValue($_POST['confirm-password']);
 
     // FALSE
     if ($password !== $passwordConfirm) {
@@ -53,6 +54,7 @@ if (!empty($_POST)) {
         'auth_id' => $id,
     ];
 
-    // On redirige vers la home
-    header('Location: ../../');
-    exit; }
+    //On redirige vers la home
+     header('../../users/index');
+     exit;
+    }

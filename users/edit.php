@@ -1,4 +1,24 @@
-<?php require "template-parts/layout/head.php" ?>
+<?php require "../template-parts/layout/head.php" ?>
+
+
+<?php
+
+
+$connexion = new PDO('mysql:host=localhost:8889;dbname=msprwis2', 'root', 'root');
+
+$id = $_GET['id'];
+
+$query = $connexion->prepare('SELECT * FROM users WHERE id = :id');
+
+$values = [
+    'id' => $id,
+];
+
+$query->execute($values);
+
+$users = $query->fetch();
+
+?>
 
 <main>
     <section id="register-form">
@@ -10,44 +30,33 @@
 
                     <div class="row">
                         <div class="col-sm-6">
-                            <div class="card-image-register">
-                                <div id="screen"></div>
+                            <div class="card-image">
+                                <img src="../assets/images/humaaans2.png">
                             </div>
                         </div>
 
                         <div class="col-sm-6">
-                            <h1 class="text-center mb-5">Bienvenue !</h1>
-                            <form class="form" action="api/users/store.php" method="post">
-
+                            <h1 class="text-center">S'enregistrer !</h1>
+                            <form class="form" action="../api/users/update.php?id=<?php echo $users['id'] ?>" method="post">
                                 <div class="mb-3">
                                     <label for="username" class="form-label"></label>
                                     <input type="username" class="form-control" name="username"
-                                           aria-describedby="username" placeholder="username">
+                                           aria-describedby="username" placeholder="username" value="<?php echo $users['username']; ?>">
                                 </div>
                                 <div class="mb-3">
                                     <label for="exampleInputEmail1" class="form-label"></label>
                                     <input type="email" class="form-control" name="email"
-                                           aria-describedby="emailHelp" placeholder="Email">
-                                </div>
-                                <div class="mb-3">
-                                    <label for="exampleInputEmail1" class="form-label"></label>
-                                    <input type="email" class="form-control" name="confirm-email"
-                                           aria-describedby="emailHelp" placeholder="Confirmez votre Email">
+                                           aria-describedby="emailHelp" placeholder="Email" value="<?php echo $users['email']; ?>">
                                 </div>
                                 <div class="mb-3">
                                     <label for="exampleInputPassword1" class="form-label"></label>
                                     <input type="password" class="form-control" name="password"
-                                           placeholder="Mot de Passe">
+                                           placeholder="Mot de Passe" value="<?php echo $users['password']; ?>">
                                 </div>
                                 <div class="mb-3">
                                     <label for="exampleInputPassword1" class="form-label"></label>
                                     <input type="password" class="form-control" name="confirm-password"
-                                           placeholder="Confirmez votre Mot de Passe">
-                                </div>
-                                <div class="mb-3">
-                                    <label for="exampleInputTel" class="form-label"></label>
-                                    <input type="tel" class="form-control" id="exampleInputTel"
-                                           placeholder="Numéro de tel">
+                                           placeholder="Confirmez votre Mot de Passe" value="<?php echo $users['confirm-password']; ?>">
                                 </div>
 
                                 <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
@@ -66,5 +75,3 @@
             </div>
     </section>
 </main>
-
-<?php require "template-parts/layout/footer.php" ?>
