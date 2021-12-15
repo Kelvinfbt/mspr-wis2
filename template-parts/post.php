@@ -2,7 +2,7 @@
 
     <div class="form-group mb-3">
         <label for="body"></label>
-        <textarea class="form-control" placeholder="Ajouter un nouveau post" id="body"></textarea>
+        <textarea name="body" class="form-control" placeholder="Ajouter un nouveau post" id="body"></textarea>
     </div>
 
 
