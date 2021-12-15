@@ -1,8 +1,6 @@
-<?php require "../template-parts/layout/head.php" ?>
+<?php require "../template-parts/layout/head.php";
 
-
-<?php
-
+middleware('auth');
 
 $connexion = new PDO('mysql:host=localhost:8889;dbname=msprwis2', 'root', 'root');
 

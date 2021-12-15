@@ -2,6 +2,8 @@
 require_once '../template-parts/layout/head.php';
 require_once '../functions/users.php';
 
+middleware('auth');
+
 $users = getUsers();
 $page = ['title' => 'Liste des utilisateurs'];
 

@@ -1,4 +1,8 @@
-<?php require_once 'template-parts/layout/head.php' ?>
+<?php require_once 'template-parts/layout/head.php';
+
+middleware('guest');
+
+?>
 
     <main>
         <section id="login-form">
