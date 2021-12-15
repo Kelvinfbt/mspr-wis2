@@ -1,4 +1,4 @@
-<form id="post_form">
+<form id="post_form" class="form" method="post">
 
     <div class="form-group mb-3">
         <label for="body"></label>
@@ -23,8 +23,6 @@
                 </div>
             </div>
         </div>
-
-
         <div class="col-md-6">
             <button type="button" data-bs-toggle="collapse" data-bs-target="#collapseTag" aria-expanded="false"
                     aria-controls="collapseTag" class="btn btn-outline-secondary w-100">
@@ -58,7 +56,6 @@
                 </div>
             </div>
         </div>
-
 
         <div class="col-md-6">
             <button type="button" data-bs-toggle="collapse" data-bs-target="#collapsemotivation"
@@ -137,12 +134,8 @@
         </div>
         <div class="collapse" id="collapselieu">
             <div class="card card-body">
-                Some placeholder content for the collapse component. This panel is hidden by default but revealed
-                when
-                the user activates the relevant trigger.
             </div>
         </div>
-
 
         <div class="col-md-6">
             <button type="button" data-bs-toggle="collapse" data-bs-target="#collapseGif" aria-expanded="false"
@@ -153,9 +146,17 @@
         </div>
         <div class="collapse" id="collapseGif">
             <div class="card card-body">
-                Some placeholder content for the collapse component. This panel is hidden by default but revealed
-                when
-                the user activates the relevant trigger.
+                <div class="search">
+                    <h3 class="h2">Gif Recherche</h3>
+                </div>
+                <div class="container container-padding50">
+                    <input type="text" class="js-userinput container-textinput"/>
+                    <button class="js-go container-button">
+                        Recherche!
+                    </button>
+                </div>
+                <div class="container js-container">
+                </div>
             </div>
         </div>
 
@@ -171,14 +172,80 @@
 
             </div>
         </div>
-
-
+        <button role="submit" class="btn btn-outline-primary mt-3">Publier</button>
     </div>
-    <button class="btn btn-outline-primary mt-3">Publier</button>
+
 </form>
 
 
 <script>
 
+    /*
+    document.addEventListener('DOMContentLoaded', function () {
+        // Obtenir l'entrée
+        function getUserInput() {
+            let inputValue = document
+                .querySelector(".js-userinput").value;
+            return inputValue;
+        }
+
+        // Obtenir l'entrée et retourner la valeur
+        document.querySelector(".js-go").addEventListener("click", function () {
+            let inputValue = document
+                .querySelector(".js-userinput").value;
+            let userInput = getUserInput();
+            searchGiphy(userInput);
+        });
+
+        document.querySelector(".js-userinput")
+            .addEventListener("keyup", function (e) {
+
+                if (e.which === 13) {
+                    let userInput = getUserInput();
+                    searchGiphy(userInput);
+                }
+            });
+
+        //Charger les images sans actualiser la page et se connecter à l'API
+        function searchGiphy(searchQuery) {
+            let url =
+                "https://api.giphy.com/v1/gifs/search?api_key=dc6zaTOxFJmzC&q="
+                + searchQuery;
+
+            // AJAX Request
+
+            let GiphyAJAXCall = new XMLHttpRequest();
+            GiphyAJAXCall.open("GET", url);
+            GiphyAJAXCall.send();
+
+            GiphyAJAXCall.addEventListener("load", function (data) {
+                let actualData = data.target.response;
+                pushToDOM(actualData);
+                console.log(actualData);
+
+            });
+        }
+
+
+        function pushToDOM(response) {
+
+            response = JSON.parse(response);
+
+            let images = response.data;
+
+            let container = document.querySelector(".js-container");
+
+            container.innerHTML = "";
+
+            images.forEach(function (image) {
+
+                let src = image.images.fixed_height.url;
+
+                container.innerHTML += "<img src='"
+                    + src + "' class='container-image' />";
+            });
+        }
+    });
+*/
 
 </script>
