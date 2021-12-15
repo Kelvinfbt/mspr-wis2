@@ -26,7 +26,7 @@ middleware('guest');
                                 <div class="mb-3">
                                     <label for="username" class="form-label"></label>
                                     <input type="username" class="form-control" name="username"
-                                           aria-describedby="username" placeholder="username">
+                                           aria-describedby="username" placeholder="Nom d'utilisateur">
                                 </div>
                                 <div class="mb-3">
                                     <label for="exampleInputEmail1" class="form-label"></label>
