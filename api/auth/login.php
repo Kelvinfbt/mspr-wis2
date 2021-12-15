@@ -3,6 +3,8 @@
 require_once '../../functions/helpers.php';
 require_once '../../functions/users.php';
 
+middleware('guest');
+
 // On récupère les données
 if (!empty($_POST)) {
 

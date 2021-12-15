@@ -5,6 +5,8 @@ require_once '../../functions/helpers.php';
 require_once '../../functions/users.php';
 
 
+middleware('auth');
+
 /*$path = storeImage($image);*/
 
 $auth = getAuth();
