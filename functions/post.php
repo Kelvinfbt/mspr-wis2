@@ -25,8 +25,7 @@ function getPosts()
 function storePost($data)
 {
     $dbh = connectDB();
-    $stmt = $dbh->prepare('INSERT INTO posts (title, body, media, user_id) VALUES (:title, :body, :media, :user_id)');
-    $stmt->bindParam(':title', $data['title']);
+    $stmt = $dbh->prepare('INSERT INTO posts (body, media, user_id) VALUES (:body, :media, :user_id)');
     $stmt->bindParam(':body', $data['body']);
     $stmt->bindParam(':media', $data['media']);
     $stmt->bindParam(':user_id', $data['user_id']);
@@ -62,9 +61,8 @@ function getPost($id)
 function updatePost($id, $data)
 {
     $dbh = connectDB();
-    $stmt = $dbh->prepare('UPDATE posts SET title = :title, media = :media, body = :body, updated_at = NOW() WHERE id = :id');
+    $stmt = $dbh->prepare('UPDATE posts SET media = :media, body = :body, updated_at = NOW() WHERE id = :id');
     $stmt->bindParam(':id', $id);
-    $stmt->bindParam(':title', $data['title']);
     $stmt->bindParam(':media', $data['media']);
     $stmt->bindParam(':body', $data['body']);
     $stmt->execute();

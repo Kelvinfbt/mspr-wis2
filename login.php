@@ -17,7 +17,7 @@ middleware('guest');
                     </div>
                     <div class="col-sm-6">
                         <h1 class="text-center">Se Connecter !</h1>
-                        <form class="form">
+                        <form class="form" action="api/auth/login.php">
                             <div class="mb-3">
                                 <label for="exampleInputEmail1" class="form-label"></label>
                                 <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Email">
