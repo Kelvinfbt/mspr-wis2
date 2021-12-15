@@ -4,13 +4,13 @@
 // Components
 @import "components/post";
 @import "components/sidebar";
-
+@import "components/login";
+@import "components/sidebar";
+@import "components/btn-login";
+@import "components/profil-home";
 
 
 // PAGES
-@import "home";
-@import "components/login";
-@import "components/sidebar";
-
+@import "pages/home";
 @import "pages/hero-account";
 @import "pages/main-account";

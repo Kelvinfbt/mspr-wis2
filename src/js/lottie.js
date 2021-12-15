@@ -1,12 +1,12 @@
 import Lottie from "lottie-web";
 
-let register = document.getElementById('register');
+let login = document.getElementById('login');
 Lottie.loadAnimation({
-    container: register,
+    container: login,
     renderer: 'svg',
     loop: true,
     autoplay: true,
-    path: 'assets/lottie/register.json'
+    path: 'assets/lottie/login.json'
 });
 
 let screen = document.getElementById('screen');

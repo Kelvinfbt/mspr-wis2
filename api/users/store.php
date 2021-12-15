@@ -55,7 +55,7 @@ if (!empty($_POST)) {
         'auth_id' => $id,
     ];
 //print_r($data);
+
     //On redirige vers la home
      header('../../users/index.php');
-
     }
