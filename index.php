@@ -19,8 +19,6 @@ middleware('auth');
                         <button class="btn text-light bg-dark" type="submit">Search</button>
                     </form>
                 </div>
-
-               <?php require_once 'template-parts/layout/posts.php'?>
             </div>
             <div class="col">
                 <div class="notifs-list">
@@ -45,11 +43,13 @@ middleware('auth');
             </div>
         </div>
 
-<<<<<<< Updated upstream
+
 
 </main>
+
+
 
 <?php require_once 'template-parts/layout/footer.php' ?>
-=======
-</main>
->>>>>>> Stashed changes
+
+
+

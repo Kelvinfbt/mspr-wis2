@@ -22,7 +22,7 @@ if (getValue($_POST)) {
     ];
 
 
-    print_r($data);
+    //print_r($data);
 
 
 
@@ -32,6 +32,7 @@ if (getValue($_POST)) {
     $postId = storePost($data);
 
     // On redirige l'utilisateur sur la page de l'article
-    //header("Location: /crud/posts/show.php?id=$postId");
+
+    header("Location: /post/show.php?id=$postId");
     //exit;
 }
