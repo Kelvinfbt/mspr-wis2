@@ -66,4 +66,4 @@ middleware('guest');
     </section>
 </main>
 
-<?php require "template-parts/layout/footer.php" ?>
+<script src="/assets/js/app.js"></script>

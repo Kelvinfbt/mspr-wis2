@@ -2222,6 +2222,14 @@ lottie_web__WEBPACK_IMPORTED_MODULE_0___default().loadAnimation({
   autoplay: true,
   path: 'assets/lottie/login.json'
 });
+var welcome = document.getElementById('welcome');
+lottie_web__WEBPACK_IMPORTED_MODULE_0___default().loadAnimation({
+  container: welcome,
+  renderer: 'svg',
+  loop: true,
+  autoplay: true,
+  path: 'assets/lottie/welcome.json'
+});
 var screen = document.getElementById('screen');
 lottie_web__WEBPACK_IMPORTED_MODULE_0___default().loadAnimation({
   container: screen,

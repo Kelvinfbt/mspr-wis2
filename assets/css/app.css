@@ -11380,6 +11380,13 @@ textarea.form-control-lg {
   border-radius: 10px;
 }
 
+.btn-welcome {
+  margin-top: 200px;
+  border: 2px solid #FFB703;
+  width: 200px;
+  font-size: 20px;
+}
+
 #hero-account .container .row .col-md-3 {
   border: 1px solid red;
 }
