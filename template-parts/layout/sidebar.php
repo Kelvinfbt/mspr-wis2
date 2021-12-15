@@ -1,34 +1,32 @@
+<aside id="sidebar">
+    <nav>
+        <ul class="nav flex-column">
+            <li class="nav-item">
+                <a class="nav-link" href="#">
+                    Fil D'actualités
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">
+                    Mes publications
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="users.php">
+                    Liste des utilisateurs
+                </a>
+            </li>
 
-<nav id="sidebar">
+            <li class="nav-item">
+                <a class="nav-link" href="mentions-legales.php">
+                    Mentions légales
+                </a>
+            </li>
+        </ul>
+    </nav>
+    <div class="logout">
+        <a href="profile.php?id=<?php echo $_SESSION['id']?>" class="btn btn-warning">Voir le profil</a>
+    </div>
 
-    <ul class="list-group shadow-sm">
-        <li class="list-group-item border-secondary border-1">
-            <a href="/">
-                <div class="link-wrapper">
-                    <span>Accueil</span>
-                </div>
-            </a>
-        </li>
-        <li class="list-group-item border-secondary border-1">
-            <a href="/notifications">
-                <div class="link-wrapper">
-                    <span>Notifications</span>
-                </div>
-            </a>
-        </li>
-        <li class="list-group-item border-secondary border-1">
-            <a href="/messages">
-                <div class="link-wrapper">
-                    <span>Messages</span>
-                </div>
-            </a>
-        </li>
-        <li class="list-group-item border-secondary border-1">
-            <a href="account.php">
-                <div class="link-wrapper">
-                    <span>Profil</span>
-                </div>
-            </a>
-        </li>
-    </ul>
 
+</aside>

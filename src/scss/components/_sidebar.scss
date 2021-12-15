@@ -1,4 +1,4 @@
-#sidebar {
+/* #sidebar {
 
 
   ul {
@@ -27,6 +27,33 @@
         align-content: center;
         align-items: center;
       }
+    }
+  }
+} */
+
+#sidebar {
+  margin-top: 30px;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: calc(88vh - 90px);
+
+  .nav-item {
+
+    .nav-link {
+      color: black;
+
+      &:hover {
+        color: #86CCB0;
+      }
+    }
+  }
+  .logout {
+    display: flex;
+    justify-content: center;
+    a {
+      padding: 1px 2.5em;
     }
   }
 }

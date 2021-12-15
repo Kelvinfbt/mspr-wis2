@@ -1,3 +1,21 @@
-* {
+#home{
+.list-group{
+  margin-top: 30px;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+
+
+  .list-group-item{
+    color: black;
+
+    &:hover {
+      color: #86CCB0;
+    }
+
+  }
+}
 
 }

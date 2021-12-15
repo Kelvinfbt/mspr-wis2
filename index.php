@@ -22,27 +22,26 @@ middleware('auth');
                 <div>
                     <form class="d-flex py-3">
                         <input class="form-control me-2 shadow-sm" type="search" placeholder="Search" aria-label="Search">
-                        <button class="btn text-light bg-dark shadow-sm" type="submit">Search</button>
+                        <button class="btn" type="submit">Search</button>
                     </form>
                 </div>
 
                 <div class="notifs-list">
-                    <h4 class="text-center">Notifications</h4>
                     <div class="list-group shadow-sm">
-                        <a href="#" class="list-group-item list-group-item-action py-3 border-secondary border-1">Noah Guillet</a>
-                        <a href="#" class="list-group-item list-group-item-action py-3 border-secondary border-1">Dorian Candy</a>
-                        <a href="#" class="list-group-item list-group-item-action py-3 border-secondary border-1">Kelvin Fabert</a>
-                        <a href="#" class="list-group-item list-group-item-action py-3 border-secondary border-1">Luka Sarazin</a>
+                        <a class="list-group-item list-group-item-secondary text-center">Notifications</a>
+                        <a href="#" class="list-group-item">Dorian Candy</a>
+                        <a href="#" class="list-group-item">Kelvin Fabert</a>
+
                     </div>
                 </div>
 
                 <div class="friends-list py-3">
-                    <h4 class="text-center">Liste d'amis</h4>
                     <div class="list-group shadow-sm">
-                        <a href="#" class="list-group-item list-group-item-action py-3 border-secondary border-1">Noah Guillet</a>
-                        <a href="#" class="list-group-item list-group-item-action py-3 border-secondary border-1">Dorian Candy</a>
-                        <a href="#" class="list-group-item list-group-item-action py-3 border-secondary border-1">Kelvin Fabert</a>
-                        <a href="#" class="list-group-item list-group-item-action py-3 border-secondary border-1">Luka Sarazin</a>
+                        <a href="#" class="list-group-item list-group-item-secondary text-center">Liste d'amis</a>
+                        <a href="#" class="list-group-item">Dorian Candy</a>
+                        <a href="#" class="list-group-item">Kelvin Fabert</a>
+                        <a href="#" class="list-group-item">Coline Cabus</a>
+                        <a href="#" class="list-group-item">Noah Guillet</a>
                     </div>
                 </div>
             </div>
@@ -55,6 +54,8 @@ middleware('auth');
 
 
 <?php require_once 'template-parts/layout/footer.php' ?>
+
+
 
 
 
