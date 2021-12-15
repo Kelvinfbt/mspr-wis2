@@ -50,12 +50,12 @@ if (!empty($_POST)) {
     //mail($data['email'], 'Bienvenue', 'Coucou');
 
     // On démare la session
-    session_start();
+
     $_SESSION = [
         'auth_id' => $id,
     ];
-
+//print_r($data);
     //On redirige vers la home
-     header('../../users/index');
-     exit;
+     header('../../users/index.php');
+
     }

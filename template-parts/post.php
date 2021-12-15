@@ -9,6 +9,7 @@
     <div class="row g-1">
 
         <div class="col-md-6">
+            <label for="media"></label>
             <button type="button" data-bs-toggle="collapse" data-bs-target="#collapsePicture"
                     class="btn btn-outline-secondary w-100">
                 <img src="/assets/images/image.png" alt="" width="30px" height="30px" loading="lazy">

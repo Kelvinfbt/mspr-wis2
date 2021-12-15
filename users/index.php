@@ -18,6 +18,7 @@ require_once '../template-parts/layout/header.php'; ?>
                 <th>ID</th>
                 <th>Username</th>
                 <th>Email</th>
+                <th>Admin</th>
                 <th>Date d'inscription</th>
                 <th>Modifier</th>
             </tr>
@@ -29,6 +30,7 @@ require_once '../template-parts/layout/header.php'; ?>
                     <td><?php echo $user['id']; ?></td>
                     <td><?php echo $user['username']; ?></td>
                     <td><?php echo $user['email']; ?></td>
+                    <td><?php echo isAdmin($user) ? 'Oui' : 'Non'; ?></td>
                     <td><?php echo $user['created_at']; ?></td>
                     <td><a type="button" id="button" href="edit.php?id=<?php echo $user['id'];?>">Modifier</a></td>
                 </tr>

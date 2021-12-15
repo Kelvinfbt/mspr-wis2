@@ -30,6 +30,6 @@ if (!empty($_POST)) {
     ];
 
     // On redigige vers l'accueil
-    header('Location: ../../');
+    header('Location: ../../index.php');
     exit;
 }
