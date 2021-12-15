@@ -11,16 +11,18 @@ middleware('auth');
             <div class="col">
                 <?php require_once 'template-parts/layout/sidebar.php'; ?>
             </div>
-            <div class="col-6">
 
-                <?php require_once 'template-parts/post.php'; ?>
+                <div class="col-6">
+                    <?php require_once 'template-parts/post.php'; ?>
 
-            </div>
+                </div>
+
             <div class="col">
 
                 <div>
                     <form class="d-flex py-3">
-                        <input class="form-control me-2 shadow-sm" type="search" placeholder="Search" aria-label="Search">
+                        <input class="form-control me-2 shadow-sm" type="search" placeholder="Search"
+                               aria-label="Search">
                         <button class="btn" type="submit">Search</button>
                     </form>
                 </div>
@@ -47,9 +49,7 @@ middleware('auth');
         </div>
 
 
-
 </main>
-
 
 
 <?php require_once 'template-parts/layout/footer.php' ?>

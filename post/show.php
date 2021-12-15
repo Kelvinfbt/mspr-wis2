@@ -35,5 +35,10 @@ $page = [
             <a href="">Likes</a>
             <p class="card-text"><small class="text-muted">il y a 10 min</small></p>
         </div>
+            <form action="../" method="POST">
+                <button type="submit" class="btn btn-outline-danger btn-sm">
+                    like
+                </button>
+            </form>
     </div>
 </main>
