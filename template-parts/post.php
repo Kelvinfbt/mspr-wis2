@@ -173,7 +173,7 @@
 
             </div>
         </div>
-        <button role="submit" class="btn btn-outline-primary mt-3">Publier</button>
+        <button type="submit" class="btn btn-outline-primary mt-3">Publier</button>
     </div>
 
 </form>
