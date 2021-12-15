@@ -11285,7 +11285,7 @@ textarea.form-control-lg {
   margin-bottom: 1rem;
 }
 
-#sidebar .site-brand {
+#sidebar {
   display: inline-block;
   text-decoration: none;
   color: white;
@@ -11303,7 +11303,8 @@ textarea.form-control-lg {
 #sidebar ul li a {
   display: inline-block;
   text-decoration: none;
-  color: inherit;
+  color: black;
+  background-color: white;
   padding: 0.75rem;
   font-size: 20px;
   border-radius: 50rem;
@@ -11342,7 +11343,7 @@ textarea.form-control-lg {
   margin-top: 80px;
 }
 
-#sidebar .site-brand {
+#sidebar {
   display: inline-block;
   text-decoration: none;
   color: white;
@@ -11360,7 +11361,8 @@ textarea.form-control-lg {
 #sidebar ul li a {
   display: inline-block;
   text-decoration: none;
-  color: inherit;
+  color: black;
+  background-color: white;
   padding: 0.75rem;
   font-size: 20px;
   border-radius: 50rem;
@@ -11373,10 +11375,6 @@ textarea.form-control-lg {
 
 .button-login {
   border-radius: 10px;
-}
-
-* {
-  background-color: #023047;
 }
 
 #hero-account .container .row .col-md-3 {

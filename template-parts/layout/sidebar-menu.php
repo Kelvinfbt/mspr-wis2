@@ -14,13 +14,6 @@ $auth = getAuth();
             </a>
         </li>
         <li class="list-group-item">
-            <a href="/explorer">
-                <div class="link-wrapper">
-                    <span>Explorer</span>
-                </div>
-            </a>
-        </li>
-        <li class="list-group-item">
             <a href="/notifications">
                 <div class="link-wrapper">
                     <span>Notifications</span>

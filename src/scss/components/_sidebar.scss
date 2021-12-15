@@ -1,11 +1,11 @@
 #sidebar {
 
-  .site-brand {
+
     display: inline-block;
     text-decoration: none;
     color: white;
     padding: 0.5rem;
-  }
+
   ul {
     padding-left: 0;
     margin-top: 5px;
@@ -15,10 +15,12 @@
     li {
       padding: 4px 0;
 
+
       a {
         display: inline-block;
         text-decoration: none;
-        color: inherit;
+        color: black;
+        background-color: white;
         padding: .75rem;
         font-size: 20px;
         border-radius: 50rem;
