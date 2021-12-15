@@ -1,12 +1,15 @@
 <?php
 
-require_once '../../functions/database.php';
-require_once '../../functions/helpers.php';
-require_once '../../functions/users.php';
-require_once '../../functions/post.php';
+require_once '../functions/database.php';
+require_once '../functions/helpers.php';
+require_once '../functions/users.php';
+require_once '../functions/post.php';
+
 
 $post = getPosts($_GET['id']);
 $author = getPostAuthor($post);
+
+$body = $_POST['body'];
 
 $page = [
     'body'=>$post['body'],
