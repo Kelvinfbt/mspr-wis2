@@ -11300,38 +11300,6 @@ textarea.form-control-lg {
   justify-content: center;
 }
 
-/* #sidebar {
-
-
-  ul {
-    padding-left: 0;
-    margin-top: 5px;
-    margin-bottom: 0;
-    list-style: none;
-
-    li {
-      padding: 4px 0;
-
-
-      a {
-        display: inline-block;
-        text-decoration: none;
-        color: black;
-        background-color: white;
-        padding: .75rem;
-        font-size: 20px;
-        border-radius: 50rem;
-
-      }
-
-      .link-wrapper {
-        display: flex;
-        align-content: center;
-        align-items: center;
-      }
-    }
-  }
-} */
 #sidebar {
   margin-top: 30px;
   width: 300px;
@@ -11352,6 +11320,7 @@ textarea.form-control-lg {
 }
 #sidebar .logout a {
   padding: 1px 2.5em;
+  background-color: #86CCB0;
 }
 
 #login-form {
@@ -11382,38 +11351,6 @@ textarea.form-control-lg {
   margin-top: 80px;
 }
 
-/* #sidebar {
-
-
-  ul {
-    padding-left: 0;
-    margin-top: 5px;
-    margin-bottom: 0;
-    list-style: none;
-
-    li {
-      padding: 4px 0;
-
-
-      a {
-        display: inline-block;
-        text-decoration: none;
-        color: black;
-        background-color: white;
-        padding: .75rem;
-        font-size: 20px;
-        border-radius: 50rem;
-
-      }
-
-      .link-wrapper {
-        display: flex;
-        align-content: center;
-        align-items: center;
-      }
-    }
-  }
-} */
 #sidebar {
   margin-top: 30px;
   width: 300px;
@@ -11434,10 +11371,18 @@ textarea.form-control-lg {
 }
 #sidebar .logout a {
   padding: 1px 2.5em;
+  background-color: #86CCB0;
 }
 
 .button-login {
   border-radius: 10px;
+}
+
+.btn-welcome {
+  margin-top: 200px;
+  border: 2px solid #FFB703;
+  width: 200px;
+  font-size: 20px;
 }
 
 #home .list-group {
