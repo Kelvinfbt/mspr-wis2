@@ -1,10 +1,7 @@
 <?php require_once 'template-parts/layout/head.php';
 
 middleware('guest');
-
 ?>
-
-
 <section id="login-form">
     <div class="container container_login">
         <div class="card mx-auto shadow mt-5">

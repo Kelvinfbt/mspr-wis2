@@ -48,11 +48,6 @@ middleware('guest');
                                     <input type="password" class="form-control" name="confirm-password"
                                            placeholder="Confirmez votre Mot de Passe">
                                 </div>
-                                <div class="mb-3">
-                                    <label for="exampleInputTel" class="form-label"></label>
-                                    <input type="tel" class="form-control" id="exampleInputTel"
-                                           placeholder="Numéro de tel">
-                                </div>
 
                                 <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
                                 <label class="form-check-label" for="invalidCheck">
