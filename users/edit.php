@@ -1,5 +1,25 @@
 <?php require "../template-parts/layout/head.php" ?>
 
+
+<?php
+
+
+$connexion = new PDO('mysql:host=localhost:8889;dbname=msprwis2', 'root', 'root');
+
+$id = $_GET['id'];
+
+$query = $connexion->prepare('SELECT * FROM users WHERE id = :id');
+
+$values = [
+    'id' => $id,
+];
+
+$query->execute($values);
+
+$users = $query->fetch();
+
+?>
+
 <main>
     <section id="register-form">
         <div class="container container_register">
@@ -17,7 +37,7 @@
 
                         <div class="col-sm-6">
                             <h1 class="text-center">S'enregistrer !</h1>
-                            <form class="form" action="api/users/update.php?id=<?php echo $users['id'] ?>" method="post">
+                            <form class="form" action="../api/users/update.php?id=<?php echo $users['id'] ?>" method="post">
                                 <div class="mb-3">
                                     <label for="username" class="form-label"></label>
                                     <input type="username" class="form-control" name="username"
@@ -27,11 +47,6 @@
                                     <label for="exampleInputEmail1" class="form-label"></label>
                                     <input type="email" class="form-control" name="email"
                                            aria-describedby="emailHelp" placeholder="Email" value="<?php echo $users['email']; ?>">
-                                </div>
-                                <div class="mb-3">
-                                    <label for="exampleInputEmail1" class="form-label"></label>
-                                    <input type="email" class="form-control" name="confirm-email"
-                                           aria-describedby="emailHelp" placeholder="Confirmez votre Email" value="<?php echo $users['confirm-email']; ?>">
                                 </div>
                                 <div class="mb-3">
                                     <label for="exampleInputPassword1" class="form-label"></label>

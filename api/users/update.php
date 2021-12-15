@@ -24,6 +24,6 @@ $values = [
 
 $query->execute($values);
 
-header('Location:/users/index.php');
+header('Location:../../users/index.php');
 
 ?>
