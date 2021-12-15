@@ -1,6 +1,7 @@
 <?php
 
 
+
 $username = $_POST['username'];
 $prenom = $_POST['first_name'];
 $nom = $_POST['last_name'];
