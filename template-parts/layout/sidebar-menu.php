@@ -35,23 +35,23 @@ $auth = getAuth();
             </a>
         </li>
         <li class="list-group-item">
-            <a href="/profile">
+            <a href="account.php">
                 <div class="link-wrapper">
                     <span>Profil</span>
                 </div>
             </a>
         </li>
         <?php if ($auth): ?>
-            <li class="nav-item">
+            <li class="nav-item list-group-item">
                 <a class="nav-link"
                    href="/users/show.php"><?php echo $auth['username']; ?></a>
             </li>
             <?php if (isAdmin($auth)): ?>
-                <li class="nav-item">
+                <li class="nav-item list-group-item">
                     <a class="nav-link" href="../admin">Admin</a>
                 </li>
             <?php endif; ?>
-            <li class="nav-item">
+            <li class="nav-item list-group-item">
                 <a href="#" class="nav-link"
                    onclick="event.preventDefault(); document.getElementById('logout-form').submit();">Logout</a>
                 <form id="logout-form" action="../../api/auth/logout.php" method="POST"

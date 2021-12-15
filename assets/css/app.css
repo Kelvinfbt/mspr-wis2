@@ -11288,7 +11288,7 @@ textarea.form-control-lg {
 #sidebar .site-brand {
   display: inline-block;
   text-decoration: none;
-  color: inherit;
+  color: white;
   padding: 0.5rem;
 }
 #sidebar ul {
@@ -11345,7 +11345,7 @@ textarea.form-control-lg {
 #sidebar .site-brand {
   display: inline-block;
   text-decoration: none;
-  color: inherit;
+  color: white;
   padding: 0.5rem;
 }
 #sidebar ul {
@@ -11369,6 +11369,14 @@ textarea.form-control-lg {
   display: flex;
   align-content: center;
   align-items: center;
+}
+
+.button-login {
+  border-radius: 10px;
+}
+
+* {
+  background-color: #023047;
 }
 
 #hero-account .container .row .col-md-3 {

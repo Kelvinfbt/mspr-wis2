@@ -19,11 +19,11 @@ if ($id = getValue($_GET['id'])) {
 }
 
 
-// $body = $_POST['body'];
+$body = $_POST['body'];
 
-// $page = [
-  //  'body'=>$post['body'],
-// ];
+$page = [
+        'body'=>$post['body'],
+ ];
 
 ?>
 
