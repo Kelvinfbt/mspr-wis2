@@ -24,7 +24,7 @@ if (!empty($_POST)) {
     }
 
     // On démare la session
-    session_start();
+    //session_start();
     $_SESSION = [
         'auth_id' => $user['id']
     ];

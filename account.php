@@ -10,19 +10,17 @@ $author = getAuth();
 <main id="main">
     <section id="hero-account" class="shadow p-3 mb-5 bg-white rounded">
         <div class="container">
-            <div class="row">
-                <div class="col-md-3">
-                    <img class="images" src="
-                  " alt="Avatar">
+            <div class="row-account row">
+                <div class="avatar col-md-3">
+                    <div class="w-25" id="welcome"> </div>
                     <div class="profile-name">
-                        <h1 class="h3"><?php echo $author['username']
-                                ; ?></h1>
+                        <h1 class="h3"><?php echo $author['username']; ?></h1>
                     </div>
                 </div>
-                <div class="col-md-7 ">
+                <div class="nav-account col-md-7 ">
                     <div class="btn-account position-absolute mt-5">
 
-                        <button type="button" class="timeline btn">
+                        <a href="index.php" type="button" class="timeline btn">
                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                                  class="bi bi-house" viewBox="0 0 16 16">
                                 <path fill-rule="evenodd"
@@ -30,15 +28,15 @@ $author = getAuth();
                                 <path fill-rule="evenodd"
                                       d="M7.293 1.5a1 1 0 0 1 1.414 0l6.647 6.646a.5.5 0 0 1-.708.708L8 2.207 1.354 8.854a.5.5 0 1 1-.708-.708L7.293 1.5z"/>
                             </svg>
-                            Publications
-                        </button>
+                            Feed
+                        </a>
 
                         <button type="button" class="friend btn">
                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                                  class="bi bi-people" viewBox="0 0 16 16">
                                 <path d="M15 14s1 0 1-1-1-4-5-4-5 3-5 4 1 1 1 1h8zm-7.978-1A.261.261 0 0 1 7 12.996c.001-.264.167-1.03.76-1.72C8.312 10.629 9.282 10 11 10c1.717 0 2.687.63 3.24 1.276.593.69.758 1.457.76 1.72l-.008.002a.274.274 0 0 1-.014.002H7.022zM11 7a2 2 0 1 0 0-4 2 2 0 0 0 0 4zm3-2a3 3 0 1 1-6 0 3 3 0 0 1 6 0zM6.936 9.28a5.88 5.88 0 0 0-1.23-.247A7.35 7.35 0 0 0 5 9c-4 0-5 3-5 4 0 .667.333 1 1 1h4.216A2.238 2.238 0 0 1 5 13c0-1.01.377-2.042 1.09-2.904.243-.294.526-.569.846-.816zM4.92 10A5.493 5.493 0 0 0 4 13H1c0-.26.164-1.03.76-1.724.545-.636 1.492-1.256 3.16-1.275zM1.5 5.5a3 3 0 1 1 6 0 3 3 0 0 1-6 0zm3-2a2 2 0 1 0 0 4 2 2 0 0 0 0-4z"/>
                             </svg>
-                            Amies
+                            Conseil
                         </button>
 
                         <button type="button" class="picture btn">
@@ -52,7 +50,7 @@ $author = getAuth();
 
                     </div>
                 </div>
-                <div class="col-md-2">
+                <div class="update col-md-2">
                     <a class="btn btn-update" href="api/users/update.php">Modifier mon profil
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                              class="bi bi-pencil-square" viewBox="0 0 16 16">
@@ -75,24 +73,24 @@ $author = getAuth();
                         <div class="card-info">
                             <ul class="list-group list-group-flush">
                                 <li class="list-group-item">
-                                    <strong><span class="list-title">À Propos</span></strong>
-                                    <span class="list-body">hello</span>
+                                    <strong><span class="list-title">À Propos :</span></strong>
+                                    <span class="list-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores culpa dolor, mollitia nemo quo suscipit? At molestias mollitia omnis praesentium, quidem suscipit ut voluptates. Deserunt ea minus nemo quas ratione.</span>
                                 </li>
                                 <li class="list-group-item">
-                                    <strong><span class="list-title">Rejoins:</span></strong>
-                                    <span class="list-body">hello</span>
+                                    <strong><span class="list-title">Sport : </span></strong>
+                                    <span class="list-body">Musculation</span>
                                 </li>
                                 <li class="list-group-item">
-                                    <strong><span class="list-title text-dark">Habite à: </span></strong>
-                                    <span class="list-body">hello</span>
+                                    <strong><span class="list-title text-dark">Habite à : </span></strong>
+                                    <span class="list-body">Nantes</span>
                                 </li>
                                 <li class="list-group-item">
-                                    <strong><span class="list-title">Email:</span></strong>
-                                    <span class="list-body">hello</span>
+                                    <strong><span class="list-title">Niveau : </span></strong>
+                                    <span class="list-body">Intermédiaire</span>
                                 </li>
                                 <li class="list-group-item">
-                                    <strong><span class="list-title">Site Web:</span></strong>
-                                    <span class="list-body">hello</span>
+                                    <strong><span class="list-title">Salle de sport : </span></strong>
+                                    <span class="list-body">Basic fit</span>
                                 </li>
                             </ul>
                         </div>
@@ -100,21 +98,10 @@ $author = getAuth();
                 </div>
                 <div class="col-6">
                     <div class="card card-account bg-white mb-3" style="max-width: 2000px;">
-                        <div class="card-header text-center"><?php echo $author['username']
-                            ; ?></div>
+                        <div class="card-header text-center"><?php echo $author['username']; ?></div>
                         <div class="card-body">
-                            <h5 class="card-title">Titre publi</h5>
-                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. A accusantium
-                                aperiam culpa dolorem, error esse et eveniet, exercitationem fuga iste iusto minima
-                                numquam suscipit. Animi autem beatae commodi, consectetur, facilis, libero mollitia
-                                natus officiis perspiciatis quae sequi soluta sunt temporibus unde veniam. Adipisci
-                                alias, aliquid blanditiis delectus impedit modi nesciunt placeat similique. Ab delectus
-                                eligendi esse, et ipsum, iusto laboriosam maxime mollitia nam nulla optio placeat
-                                recusandae sequi sunt suscipit temporibus, ut voluptates! Adipisci alias architecto
-                                dignissimos eligendi eum ex, exercitationem explicabo laboriosam libero minus mollitia
-                                nam nesciunt, nulla odit, perferendis placeat quaerat quas reiciendis repellat sint
-                                soluta ullam voluptatem.</p>
-                            <img src="https://via.placeholder.com/600" alt="">
+                            Pour afficher le post
+                        <?php //require_once 'post/show.php'?>
                         </div>
                     </div>
                 </div>
@@ -122,7 +109,7 @@ $author = getAuth();
                 <div class="col-3">
                     <div class="card card-img" style="width: 18rem;">
                         <div class="card-body card-header">
-                            <h5 class="card-title text-center ">Dernières photos</h5>
+                            <h5 class="card-title text-center ">Mes amis</h5>
                         </div>
                         <div class="images-card">
                             <img class="card-img-top" src="assets/images/boy-2.png" alt="Card image cap">
@@ -140,23 +127,23 @@ $author = getAuth();
 
                     <div class="card card-add-friend" style="width: 18rem;">
                         <div class="card-header">
-                            <h5 class="card-title text-center">Suggestions pour vous</h5>
+                            <h5 class="card-title text-center">Mes conseils sport</h5>
                         </div>
                         <div class="add-friend">
                             <div class="name">
                                 <img class="img-add-friend" src="assets/images/man-1.png" alt="Card image cap">
-                                <strong><span>Noah GUILLET</span></strong>
+                                <strong><span>Squat en folie</span></strong>
                             </div>
-                            <div class="mutual-friend">
-                                <span>12 amies en commun</span>
+                            <div class="mutual-friend ms-5 p-2">
+                                <span>10 conseils</span>
                             </div>
 
                             <div class="name">
                                 <img class="img-add-friend" src="assets/images/man-1.png" alt="Card image cap">
-                                <strong><span>Kelvin FABERT</span></strong>
+                                <strong><span>Fitness</span></strong>
                             </div>
-                            <div class="mutual-friend">
-                                <span>12 amies en commun</span>
+                            <div class="mutual-friend ms-5 p-2">
+                                <span>3 conseils</span>
                             </div>
                         </div>
                     </div>
@@ -165,3 +152,4 @@ $author = getAuth();
         </div>
     </section>
 </main>
+<script src="/assets/js/app.js"></script>

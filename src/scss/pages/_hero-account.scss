@@ -1,13 +1,13 @@
 #hero-account {
 
   .container {
-    .row {
-      .col-md-3 {
+    .row-account {
+      .avatar {
         .images {
           border-radius: 50%;
         }
       }
-      .col-md-7 {
+      .nav-account {
 
         .btn-account {
           margin-left: 150px;
@@ -18,7 +18,7 @@
           }
         }
       }
-      .col-md-2 {
+      .update {
         .btn-update{
           margin-top: 40px;
           background-color: #86CCB0;

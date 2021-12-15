@@ -11335,21 +11335,6 @@ textarea.form-control-lg {
   padding-top: 100px;
 }
 
-#register-form {
-  display: flex;
-  width: 100%;
-  height: 100%;
-  margin: 0;
-}
-#register-form .container_register {
-  margin-left: auto;
-  margin-right: auto;
-  width: 900px;
-}
-#register-form .container_register .card-image-register {
-  margin-top: 80px;
-}
-
 #sidebar {
   margin-top: 30px;
   width: 300px;
@@ -11398,24 +11383,21 @@ textarea.form-control-lg {
   color: #86CCB0;
 }
 
-#hero-account .container .row .col-md-3 {
-  border: 1px solid red;
-}
-#hero-account .container .row .col-md-3 .images {
+#hero-account .container .row-account .avatar .images {
   border-radius: 50%;
 }
-#hero-account .container .row .col-md-7 .btn-account {
+#hero-account .container .row-account .nav-account .btn-account {
   margin-left: 150px;
 }
-#hero-account .container .row .col-md-7 .btn-account .btn:hover {
+#hero-account .container .row-account .nav-account .btn-account .btn:hover {
   text-decoration: underline;
   color: #86CCB0;
 }
-#hero-account .container .row .col-md-2 .btn-update {
+#hero-account .container .row-account .update .btn-update {
   margin-top: 40px;
   background-color: #86CCB0;
 }
-#hero-account .container .row .col-md-2 .btn-edit {
+#hero-account .container .row-account .update .btn-edit {
   margin-top: 50px;
   border-radius: 10px;
 }
@@ -11432,9 +11414,15 @@ textarea.form-control-lg {
   padding-top: 25px;
   padding-bottom: 25px;
 }
+#main-account .container .row .col-6 .card-account .card-header {
+  background-color: #86CCB0;
+}
 #main-account .container .row .col-3 .card-img {
   position: relative;
   left: 60px;
+}
+#main-account .container .row .col-3 .card-img .card-body {
+  background-color: #86CCB0;
 }
 #main-account .container .row .col-3 .card-img .images-card .card-img-top {
   width: 75px;
@@ -11446,6 +11434,9 @@ textarea.form-control-lg {
   margin-top: 30px;
   position: relative;
   left: 60px;
+}
+#main-account .container .row .col-3 .card-add-friend .card-header {
+  background-color: #86CCB0;
 }
 #main-account .container .row .col-3 .card-add-friend .add-friend .img-add-friend {
   width: 50px;
