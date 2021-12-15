@@ -1,4 +1,4 @@
-<form id="post_form" class="form" method="post">
+<form id="post_form" class="form" method="post" action="api/posts/store.php">
 
     <div class="form-group mb-3">
         <label for="body"></label>

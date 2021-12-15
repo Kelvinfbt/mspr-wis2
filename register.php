@@ -1,4 +1,8 @@
-<?php require "template-parts/layout/head.php" ?>
+<?php require "template-parts/layout/head.php";
+
+middleware('guest');
+
+?>
 
 <main>
     <section id="register-form">

@@ -3,6 +3,8 @@
 require_once '../functions/helpers.php';
 require_once '../functions/users.php';
 
+middleware('auth');
+
 if ($id = getValue($_GET['id'])) {
     $user = getUser($id);
 } else {
