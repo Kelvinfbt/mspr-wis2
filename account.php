@@ -133,6 +133,46 @@
                 </div>
 
                 <div class="col-3">
+                    <div class="card card-img" style="width: 18rem;">
+                        <div class="card-body card-header">
+                            <h5 class="card-title text-center ">Dernières photos</h5>
+                        </div>
+                        <div class="images-card">
+                            <img class="card-img-top" src="assets/images/boy-2.png" alt="Card image cap">
+                            <img class="card-img-top" src="assets/images/boy-5.png" alt="Card image cap">
+                            <img class="card-img-top" src="assets/images/boy-3.png" alt="Card image cap">
+                            <img class="card-img-top" src="assets/images/girl-2.png" alt="Card image cap">
+                            <img class="card-img-top" src="assets/images/girl-5.png" alt="Card image cap">
+                            <img class="card-img-top" src="assets/images/girl-1.png" alt="Card image cap">
+                            <img class="card-img-top" src="assets/images/boy-4.png" alt="Card image cap">
+                            <img class="card-img-top" src="assets/images/boy.png" alt="Card image cap">
+                            <img class="card-img-top" src="assets/images/girl-3.png" alt="Card image cap">
+                        </div>
+                    </div>
+
+
+                    <div class="card card-add-friend" style="width: 18rem;">
+                        <div class="card-header">
+                            <h5 class="card-title text-center">Suggestions pour vous</h5>
+                        </div>
+                        <div class="add-friend">
+                            <div class="name">
+                                <img class="img-add-friend" src="assets/images/man-1.png" alt="Card image cap">
+                                <strong><span>Noah GUILLET</span></strong>
+                            </div>
+                            <div class="mutual-friend">
+                                <span>12 amies en commun</span>
+                            </div>
+
+                            <div class="name">
+                                <img class="img-add-friend" src="assets/images/man-1.png" alt="Card image cap">
+                                <strong><span>Kelvin FABERT</span></strong>
+                            </div>
+                            <div class="mutual-friend">
+                                <span>12 amies en commun</span>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>

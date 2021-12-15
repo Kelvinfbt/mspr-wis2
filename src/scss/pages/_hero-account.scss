@@ -15,15 +15,14 @@
         }
       }
 
-      .col-md-7{
+      .col-md-7 {
         border: 1px solid green;
 
         .btn-account {
 
           margin-left: 50px;
 
-          .btn:hover
-          {
+          .btn:hover {
             text-decoration: underline;
             color: #219EBC;
           }
@@ -35,6 +34,7 @@
 
         .btn-edit {
           margin-top: 50px;
+          border-radius: 10px;
         }
       }
     }
