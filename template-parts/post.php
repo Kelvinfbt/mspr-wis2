@@ -2,7 +2,7 @@
 
     <div class="form-group mb-3">
         <label for="body"></label>
-        <textarea name="body" class="form-control" placeholder="Ajouter un nouveau post" id="body"></textarea>
+        <textarea name="body" class="text-post form-control" placeholder="Ajouter un nouveau post" id="body"></textarea>
     </div>
 
 
@@ -11,7 +11,7 @@
         <div class="col-md-6">
             <label for="media"></label>
             <button type="button" data-bs-toggle="collapse" data-bs-target="#collapsePicture"
-                    class="btn btn-outline-secondary w-100">
+                    class="btn btn-post w-100">
                 <img src="/assets/images/image.png" alt="" width="30px" height="30px" loading="lazy">
                 <span>Photos/Vidéos</span>
             </button>
@@ -24,9 +24,9 @@
                 </div>
             </div>
         </div>
-        <div class="col-md-6">
+        <div class="col-md-6 col-tag">
             <button type="button" data-bs-toggle="collapse" data-bs-target="#collapseTag" aria-expanded="false"
-                    aria-controls="collapseTag" class="btn btn-outline-secondary w-100">
+                    aria-controls="collapseTag" class="btn btn-post w-100">
                 <img alt="" src="/assets/images/tag.png" width="30px" height="30px" loading="lazy">
                 <span>Tagger un ami</span>
             </button>
@@ -59,14 +59,14 @@
         </div>
 
         <div class="col-md-6">
-            <button type="button" data-bs-toggle="collapse" data-bs-target="#collapsemotivation"
+            <button type="button" data-bs-toggle="collapse" data-bs-target="#collapseMotivation"
                     aria-expanded="false"
-                    aria-controls="collapsemotivation" class="btn btn-outline-secondary w-100">
+                    aria-controls="collapseMotivation" class="btn btn-post w-100">
                 <img alt="" src="/assets/images/motivation.png" width="30px" height="30px" loading="lazy">
                 <span>Votre motivation</span>
             </button>
         </div>
-        <div class="collapse" id="collapsemotivation">
+        <div class="collapse" id="collapseMotivation">
 
             <div class="form-check form-check-inline">
                 <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1"
@@ -128,7 +128,7 @@
 
         <div class="col-md-6">
             <button type="button" data-bs-toggle="collapse" data-bs-target="#collapselieu" aria-expanded="false"
-                    aria-controls="collapselieu" class="btn btn-outline-secondary w-100">
+                    aria-controls="collapselieu" class="btn btn-post w-100">
                 <img alt="" src="/assets/images/lieu.png" width="30px" height="30px" loading="lazy">
                 <span>Lieu</span>
             </button>
@@ -140,7 +140,7 @@
 
         <div class="col-md-6">
             <button type="button" data-bs-toggle="collapse" data-bs-target="#collapseGif" aria-expanded="false"
-                    aria-controls="collapseGif" class="btn btn-outline-secondary w-100">
+                    aria-controls="collapseGif" class="btn btn-post w-100">
                 <img alt="" src="/assets/images/gif.png" width="30px" height="30px" loading="lazy">
                 <span>Gif</span>
             </button>
@@ -163,7 +163,7 @@
 
         <div class="col-md-6">
             <button type="button" data-bs-toggle="collapse" data-bs-target="#collapseSmiley" aria-expanded="false"
-                    aria-controls="collapseSmiley" class="btn btn-outline-secondary w-100">
+                    aria-controls="collapseSmiley" class="btn btn-post w-100">
                 <img alt="" src="/assets/images/smile.png" width="30px" height="30px" loading="lazy">
                 <span>Smiley</span>
             </button>

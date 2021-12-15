@@ -11284,6 +11284,16 @@ textarea.form-control-lg {
 #post_form {
   margin-bottom: 1rem;
 }
+#post_form .col-tag {
+  margin-top: 28px;
+}
+#post_form .text-post {
+  border-radius: 10px;
+  height: 100px;
+}
+#post_form .btn-post {
+  border: 2px solid #FB8500;
+}
 
 #sidebar {
   display: inline-block;
