@@ -28,7 +28,7 @@ $auth = getAuth();
 
     // On créé l'article et on le stock en base
     //
-    // $postId = storePost($data);
+    toggleLike($data);
 
     // On redirige l'utilisateur sur la page de l'article
 
