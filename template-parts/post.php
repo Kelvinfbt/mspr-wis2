@@ -1,5 +1,5 @@
-<form id="post_form" class="form" method="post" action="api/posts/store.php">
-
+<form id="post_form" class="form pt-4" method="post" action="api/posts/store.php">
+    <h1 class="h1 text-center">Ajouter un nouveau post</h1>
     <div class="form-group mb-3">
         <label for="body"></label>
         <textarea name="body" class="text-post form-control" placeholder="Ajouter un nouveau post" id="body"></textarea>
@@ -16,7 +16,7 @@
                 <span>Photos/Vidéos</span>
             </button>
             <div class="collapse" id="collapsePicture">
-                <div class="card card-body">
+                <div class="card card-body shadow-sm p-3 bg-white rounded">
                     <form action="functions/upload.php" method="post" name="first_form" enctype="multipart/form-data">
                         <label for="file">Télécharger votre image</label>
                         <input class="input_media" type="file" name="userfile"/>
@@ -31,7 +31,7 @@
                 <span>Tagger un ami</span>
             </button>
             <div class="collapse" id="collapseTag">
-                <div class="card card-body">
+                <div class="card card-body shadow-sm p-3 bg-white rounded">
                     <ul class="list-group">
                         <li class="list-group-item">
                             <input class="form-check-input me-1" type="checkbox" value="" aria-label="...">
@@ -66,7 +66,7 @@
                 <span>Votre motivation</span>
             </button>
         </div>
-        <div class="collapse" id="collapseMotivation">
+        <div class="collapse shadow-sm p-3 bg-white rounded" id="collapseMotivation">
 
             <div class="form-check form-check-inline">
                 <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1"
@@ -134,7 +134,7 @@
             </button>
         </div>
         <div class="collapse" id="collapselieu">
-            <div class="card card-body">
+            <div class="card card-body shadow-sm p-3 bg-white rounded">
             </div>
         </div>
 
@@ -146,7 +146,7 @@
             </button>
         </div>
         <div class="collapse" id="collapseGif">
-            <div class="card card-body">
+            <div class="card card-body shadow-sm p-3 bg-white rounded">
                 <div class="search">
                     <h3 class="h2">Gif Recherche</h3>
                 </div>
@@ -169,11 +169,11 @@
             </button>
         </div>
         <div class="collapse" id="collapseSmiley">
-            <div class="card card-body">
+            <div class="card card-body shadow-sm p-3 bg-white rounded">
 
             </div>
         </div>
-        <button type="submit" class="btn btn-outline-primary mt-3">Publier</button>
+        <button type="submit" class="btn btn-postsubmit mt-3">Publier</button>
     </div>
 
 </form>
