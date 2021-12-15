@@ -11338,6 +11338,9 @@ textarea.form-control-lg {
   margin-right: auto;
   width: 900px;
 }
+#register-form .container_register .card-image-register {
+  margin-top: 140px;
+}
 
 #sidebar .site-brand {
   display: inline-block;

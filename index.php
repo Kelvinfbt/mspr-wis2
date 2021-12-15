@@ -53,7 +53,11 @@
             </div>
         </div>
 
+<<<<<<< Updated upstream
 
 </main>
 
 <?php require_once 'template-parts/layout/footer.php' ?>
+=======
+</main>
+>>>>>>> Stashed changes

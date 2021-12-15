@@ -22,6 +22,10 @@
                                 <label for="exampleInputPassword1" class="form-label"></label>
                                 <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Mot de Passe">
                             </div>
+                            <input class="form-check-input mb-3" type="checkbox" value="" id="invalidCheck">
+                            <label class="form-check-label" for="invalidCheck">
+                                Rester Connecté
+                            </label>
                             <div class="d-grid gap-2">
                                 <button type="submit" class="btn btn-light text-white">Se connecter</button>
                             </div>
