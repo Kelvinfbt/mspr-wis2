@@ -28,10 +28,10 @@ $auth = getAuth();
 
     // On créé l'article et on le stock en base
     //
-    $postId = storePost($data);
+    // $postId = storePost($data);
 
     // On redirige l'utilisateur sur la page de l'article
 
-    header("Location: /post/show.php?id=$postId");
+    header("Location: /");
     //exit;
 
