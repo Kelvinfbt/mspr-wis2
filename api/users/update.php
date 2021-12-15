@@ -1,6 +1,7 @@
 <?php
+require_once '../../functions/helpers.php';
 
-
+middleware('auth');
 
 $username = $_POST['username'];
 $prenom = $_POST['first_name'];
