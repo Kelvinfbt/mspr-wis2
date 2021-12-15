@@ -19,6 +19,7 @@ middleware('auth');
                         <button class="btn text-light bg-dark" type="submit">Search</button>
                     </form>
                 </div>
+
             </div>
             <div class="col">
                 <div class="notifs-list">
