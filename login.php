@@ -39,5 +39,5 @@ middleware('guest');
                 </div>
             </div>
     </section>
-    </main>
+
 <?php require "template-parts/layout/footer.php" ?>

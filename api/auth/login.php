@@ -29,7 +29,7 @@ if (!empty($_POST)) {
         'auth_id' => $user['id']
     ];
 
-    // On redigige vers l'accueil
-    header('Location: ../../index.php');
-    exit;
+    //On redigige vers l'accueil
+    //header('Location: ../../index.php');
+   //exit;
 }
