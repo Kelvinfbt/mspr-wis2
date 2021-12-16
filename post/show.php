@@ -32,7 +32,7 @@ $page = [
                     </form>
                     <p><?php echo $post['body']; ?></p>
                     <p class="card-text"><small class="text-muted">il y a 10 min</small></p>
-                    <a href="api/posts/edit.php?id=<?php echo $post['id'] ?>">Modifier</a>
+                    <a href="/api/posts/edit.php?id=<?php echo $post['id'] ?>">Modifier</a>
                 </div>
             </div>
         </div>
