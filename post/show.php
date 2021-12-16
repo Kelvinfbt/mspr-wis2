@@ -1,5 +1,5 @@
 <?php
-
+require_once '../template-parts/layout/head.php';
 require_once '../functions/database.php';
 require_once '../functions/helpers.php';
 require_once '../functions/users.php';
