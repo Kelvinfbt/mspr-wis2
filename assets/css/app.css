@@ -11392,21 +11392,23 @@ textarea.form-control-lg {
   font-size: 20px;
 }
 
-#home .list-group {
+#home .droite {
+  position: static;
+}
+#home .droite .list-group {
   margin-top: 30px;
   width: 300px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
-#home .list-group .list-group-item {
+#home .droite .list-group .list-group-item {
   color: black;
 }
-#home .list-group .list-group-item:hover {
+#home .droite .list-group .list-group-item:hover {
   color: #86CCB0;
 }
-
-.btn-search {
+#home .btn-search {
   border: 2px solid #1C2C3B;
   margin-right: 50px;
 }

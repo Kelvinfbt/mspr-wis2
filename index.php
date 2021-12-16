@@ -20,14 +20,14 @@ middleware('auth');
             <div class="col">
 
                 <div>
-                    <form class="d-flex py-3">
+                    <form class="d-flex py-3 droite">
                         <input class="form-control me-2 shadow-sm" type="search" placeholder="Search"
                                aria-label="Search">
                         <button class="btn btn-search" type="submit">Search</button>
                     </form>
                 </div>
 
-                <div class="notifs-list">
+                <div class="notifs-list droite">
                     <div class="list-group shadow-sm">
                         <a class="list-group-item list-group-item-secondary text-center">Conseils</a>
                         <a href="#" class="list-group-item">Musculation</a>
@@ -36,7 +36,7 @@ middleware('auth');
                     </div>
                 </div>
 
-                <div class="friends-list py-3">
+                <div class="friends-list py-3 droite">
                     <div class="list-group shadow-sm">
                         <a href="#" class="list-group-item list-group-item-secondary text-center">Liste d'amis</a>
                         <a href="#" class="list-group-item">Dorian Candy</a>
