@@ -19,5 +19,5 @@ if (getValue($_POST) && $id) {
     $postId = updatePost($id, $data);
 
     // On redirige l'utilisateur sur la page de l'article
-    header("Location: /posts/show.php?id=$postId");
+    header("Location: /post/show.php?id=$postId");
 }
