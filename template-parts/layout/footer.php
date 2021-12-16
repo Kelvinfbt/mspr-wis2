@@ -1,4 +1,3 @@
-</div>
 <div class="col-lg-3">
     <?php require_once $_SERVER['DOCUMENT_ROOT'] . '/template-parts/layout/search.php' ?>
     <div class="notifs-list droite">

@@ -90,3 +90,15 @@ function getUserPosts($id)
     return $stmt->fetchAll(PDO::FETCH_ASSOC);
 }
 
+function searchUsers($keyword)
+{
+    $keyword = "%$keyword%";
+
+    $dbh = connectDB();
+    $stmt = $dbh->prepare('SELECT * FROM users WHERE lower(username) LIKE :keyword');
+    $stmt->bindParam(':keyword', $keyword);
+    $stmt->execute();
+
+    return $stmt->fetchAll(PDO::FETCH_ASSOC);
+}
+

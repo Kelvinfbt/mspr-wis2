@@ -8,7 +8,6 @@
         <a id="trigger" class="btn btn-outline-primary">
             Click me !
         </a>
-
     </div>
 
     <div id="choose" class="row g-6">

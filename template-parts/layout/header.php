@@ -4,7 +4,5 @@
     <div class="col-lg-3">
         <?php require_once 'template-parts/layout/sidebar.php'; ?>
     </div>
-    <div class="col-lg-6">
-    </div>
 </div>
 

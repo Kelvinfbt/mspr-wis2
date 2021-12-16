@@ -5,6 +5,9 @@
 
 <?php $auth = getAuth(); ?>
 
+<?php
+
+?>
 <div class="card post-item">
 
     <img src="https://via.placeholder.com/500x300?text=<?php echo $post['body']; ?>"
@@ -21,7 +24,7 @@
                 </svg>
             </button>
 
-            <span class="ms-2 text-muted">0 likes</span>
+            <span class="ms-2 text-muted"><?php echo '' ?> likes</span>
         </form>
 
         <p class="mb-0"><?php echo $post['body']; ?></p>
