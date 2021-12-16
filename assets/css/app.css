@@ -11299,17 +11299,6 @@ textarea.form-control-lg {
   width: 100px;
   justify-content: center;
 }
-#post_form #show-post {
-  display: flex;
-  width: 100%;
-  margin: 0;
-}
-#post_form #show-post .container_post {
-  margin-left: auto;
-  margin-right: auto;
-  width: 900px;
-  padding-top: 100px;
-}
 
 #sidebar {
   margin-top: 30px;
@@ -11390,6 +11379,21 @@ textarea.form-control-lg {
   border: 2px solid #1C2C3B;
   width: 200px;
   font-size: 20px;
+}
+
+#show-post {
+  display: flex;
+  align-self: center;
+  align-content: center;
+  align-items: center;
+}
+
+.card-image-post {
+  border: solid 2px red;
+  display: flex;
+  align-self: center;
+  align-content: center;
+  align-items: center;
 }
 
 #home .droite {
