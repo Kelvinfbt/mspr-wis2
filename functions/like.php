@@ -42,12 +42,11 @@ function unlike($data)
     return true;
 }
 
-function toggleLike($data)
-{
-    if (getLikes($data)) {
-        return unlike($data);
-    } else {
-        return like($data);
-    }
+function countLike() {
+    $dbh = connectDB();
+    $stmt = $dbh->prepare('SELECT COUNT(post_id) AS total FROM likes');
+    $stmt->execute();
 
+    return $stmt->fetch();
 }
+

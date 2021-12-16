@@ -1,5 +1,6 @@
 <?php require_once $_SERVER['DOCUMENT_ROOT'] . '/functions/helpers.php'; ?>
-<?php require_once $_SERVER['DOCUMENT_ROOT'] . '/functions/users.php'; ?>
+<?php require_once $_SERVER['DOCUMENT_ROOT'] . '/functions/users.php'; ?>d
+<?php require_once $_SERVER['DOCUMENT_ROOT'] . '/functions/post.php'; ?>d
 
 <?php $auth = getAuth(); ?>
 

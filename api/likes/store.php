@@ -13,8 +13,6 @@ middleware('auth');
 
 $auth = getAuth();
 
-
-
     // On prépare les données depuis le formulaire
     $data = [
         'user_id' => $auth['id'],
@@ -22,10 +20,9 @@ $auth = getAuth();
     ];
 
     //print_r($data);
-
     // On créé l'article et on le stock en base
 
-    toggleLike($data);
+    like($data);
 
     // On redirige l'utilisateur sur la page de l'article
 
