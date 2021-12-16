@@ -11381,21 +11381,6 @@ textarea.form-control-lg {
   font-size: 20px;
 }
 
-#show-post .container-post {
-  width: 50%;
-}
-#show-post .container-post .card-post {
-  border-radius: 10px;
-}
-#show-post .container-post .card-post .card-content .btnpost {
-  margin: 5px 0 0 20px;
-}
-#show-post .container-post .card-post .card-content .text-post {
-  margin-top: 10px;
-  margin-left: 10px;
-  margin-right: 10px;
-}
-
 #home .droite {
   position: static;
 }

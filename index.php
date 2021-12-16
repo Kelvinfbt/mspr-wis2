@@ -1,40 +1,48 @@
-<?php require_once 'template-parts/layout/head.php';
+<?php
+
+require_once 'template-parts/layout/head.php';
 require_once 'functions/database.php';
 require_once 'functions/post.php';
-$posts = getPosts();
+
 middleware('auth');
 
+$posts = getPosts();
 ?>
 
 <main id="home">
 
-    <div>
-        <div class="row">
-            <div class="col">
+    <section id="home-posts">
+
+        <div class="row g-4">
+            <div class="col-3">
                 <?php require_once 'template-parts/layout/sidebar.php'; ?>
             </div>
+            <div class="col-6">
+                <?php require_once 'template-parts/post-form.php'; ?>
+                <hr>
+                <h3 class="text-center mb-5">Dernières publications :</h3>
 
-                <div class="col-6">
-
-                    <?php require_once 'template-parts/post-form.php'; ?>
-
-                </div>
-
-            <div class="col">
-
-                <div>
-                   <?php require_once 'template-parts/layout/search.php' ?>
-                </div>
-
+                <?php if ($posts): ?>
+                    <div class="posts-wrapper mx-auto" style="max-width: 500px;">
+                        <div class="row g-4">
+                            <?php foreach ($posts as $post): ?>
+                                <div class="col-12">
+                                    <?php require 'template-parts/post.php'; ?>
+                                </div>
+                            <?php endforeach; ?>
+                        </div>
+                    </div>
+                <?php endif; ?>
+            </div>
+            <div class="col-3">
+                <?php require_once 'template-parts/layout/search.php' ?>
                 <div class="notifs-list droite">
                     <div class="list-group shadow-sm">
                         <a class="list-group-item list-group-item-primary text-center">Conseils</a>
                         <a href="#" class="list-group-item">Musculation</a>
                         <a href="#" class="list-group-item">Fitness</a>
-
                     </div>
                 </div>
-
                 <div class="friends-list py-3 droite">
                     <div class="list-group shadow-sm">
                         <a href="#" class="list-group-item list-group-item-primary text-center">Liste d'amis</a>
@@ -46,8 +54,7 @@ middleware('auth');
                 </div>
             </div>
         </div>
-
-
+    </section>
 </main>
 
 
