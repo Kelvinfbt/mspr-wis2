@@ -11318,6 +11318,7 @@ textarea.form-control-lg {
   flex-direction: column;
   justify-content: space-between;
   height: calc(88vh - 90px);
+  position: fixed;
 }
 #sidebar .nav-item .nav-link {
   color: black;
@@ -11358,6 +11359,7 @@ textarea.form-control-lg {
   flex-direction: column;
   justify-content: space-between;
   height: calc(88vh - 90px);
+  position: fixed;
 }
 #sidebar .nav-item .nav-link {
   color: black;
