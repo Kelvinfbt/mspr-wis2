@@ -42,11 +42,3 @@ function unlike($data)
     return true;
 }
 
-function countLike() {
-    $dbh = connectDB();
-    $stmt = $dbh->prepare('SELECT COUNT(post_id) AS total FROM likes');
-    $stmt->execute();
-
-    return $stmt->fetch();
-}
-
