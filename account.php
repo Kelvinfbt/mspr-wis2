@@ -153,3 +153,5 @@ $author = getAuth();
     </section>
 </main>
 <script src="/assets/js/app.js"></script>
+
+<?php require 'template-parts/layout/footer.php';
