@@ -20,7 +20,7 @@ require_once '../../template-parts/layout/head.php';
     <button type="submit" class="btn btn-outline-danger">Supprimer</button>
 </form>
 
-<form id="post_form" class="form pt-4" method="post" action="/api/posts/update.php">
+<form id="post_form" class="form pt-4" method="POST" action="/api/posts/update.php?id=<?php echo $post['id']; ?>">
     <h1 class="h1 text-center">Hello, quoi de neuf ?</h1>
     <div class="form-group mb-3">
         <label for="body"></label>
