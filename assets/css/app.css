@@ -11381,6 +11381,7 @@ textarea.form-control-lg {
   font-size: 20px;
 }
 
+<<<<<<< HEAD
 #show-post {
   display: flex;
   align-self: center;
@@ -11394,6 +11395,21 @@ textarea.form-control-lg {
   align-self: center;
   align-content: center;
   align-items: center;
+=======
+#show-post .container-post {
+  width: 50%;
+}
+#show-post .container-post .card-post {
+  border-radius: 10px;
+}
+#show-post .container-post .card-post .card-content .btnpost {
+  margin: 5px 0 0 20px;
+}
+#show-post .container-post .card-post .card-content .text-post {
+  margin-top: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+>>>>>>> master
 }
 
 #home .droite {
