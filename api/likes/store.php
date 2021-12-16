@@ -21,12 +21,10 @@ $auth = getAuth();
         'post_id' => $_GET['id'],
     ];
 
-
     //print_r($data);
 
-
     // On créé l'article et on le stock en base
-    //
+
     toggleLike($data);
 
     // On redirige l'utilisateur sur la page de l'article

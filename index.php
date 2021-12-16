@@ -22,11 +22,7 @@ middleware('auth');
             <div class="col">
 
                 <div>
-                    <form class="d-flex py-3 droite">
-                        <input class="form-control me-2 shadow-sm" type="search" placeholder="Search"
-                               aria-label="Search">
-                        <button class="btn btn-search" type="submit">Search</button>
-                    </form>
+                   <?php require_once 'template-parts/layout/search.php' ?>
                 </div>
 
                 <div class="notifs-list droite">
