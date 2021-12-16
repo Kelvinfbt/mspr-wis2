@@ -10,5 +10,6 @@
     <title>Document</title>
     <link rel="stylesheet" href="/assets/css/app.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap" rel="stylesheet">
+</head>
 <body>
 

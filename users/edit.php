@@ -1,75 +1,25 @@
-<?php require "../template-parts/layout/head.php";
+<?php require $_SERVER['DOCUMENT_ROOT'] . "/template-parts/layout/header.php";
 
 middleware('auth');
 
-$connexion = new PDO('mysql:host=localhost:8889;dbname=msprwis2', 'root', 'root');
-
-$id = $_GET['id'];
-
-$query = $connexion->prepare('SELECT * FROM users WHERE id = :id');
-
-$values = [
-    'id' => $id,
-];
-
-$query->execute($values);
-
-$users = $query->fetch();
-
-?>
+$auth = getAuth(); ?>
 
 <main>
-    <section id="register-form">
-        <div class="container container_register">
 
-            <div class="card mx-auto shadow mt-5">
+    <section id="user-edit" class="py-5">
+        <div class="container">
 
-                <div class="card-body">
+            <h1>Modifier le profil de <?php echo $auth['username']; ?></h1>
 
-                    <div class="row">
-                        <div class="col-sm-6">
-                            <div class="card-image">
-                                <img src="../assets/images/humaaans2.png">
-                            </div>
-                        </div>
+            <form action="" method="POST">
 
-                        <div class="col-sm-6">
-                            <h1 class="text-center">S'enregistrer !</h1>
-                            <form class="form" action="../api/users/update.php?id=<?php echo $users['id'] ?>" method="post">
-                                <div class="mb-3">
-                                    <label for="username" class="form-label"></label>
-                                    <input type="username" class="form-control" name="username"
-                                           aria-describedby="username" placeholder="username" value="<?php echo $users['username']; ?>">
-                                </div>
-                                <div class="mb-3">
-                                    <label for="exampleInputEmail1" class="form-label"></label>
-                                    <input type="email" class="form-control" name="email"
-                                           aria-describedby="emailHelp" placeholder="Email" value="<?php echo $users['email']; ?>">
-                                </div>
-                                <div class="mb-3">
-                                    <label for="exampleInputPassword1" class="form-label"></label>
-                                    <input type="password" class="form-control" name="password"
-                                           placeholder="Mot de Passe" value="<?php echo $users['password']; ?>">
-                                </div>
-                                <div class="mb-3">
-                                    <label for="exampleInputPassword1" class="form-label"></label>
-                                    <input type="password" class="form-control" name="confirm-password"
-                                           placeholder="Confirmez votre Mot de Passe" value="<?php echo $users['confirm-password']; ?>">
-                                </div>
+                // FORM
 
-                                <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
-                                <label class="form-check-label" for="invalidCheck">
-                                    J'accepte les termes et conditions
-                                </label>
+            </form>
 
-                                <div class="mb-3 form-check">
-                                    <div class="d-grid gap-2 mt-3">
-                                        <button type="submit" class="btn btn-light text-white">S'enregistrer</button>
-                                    </div>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-            </div>
+        </div>
     </section>
+
 </main>
+
+<?php require $_SERVER['DOCUMENT_ROOT'] . "/template-parts/layout/footer.php"; ?>

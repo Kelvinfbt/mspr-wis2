@@ -1,9 +1,6 @@
-<?php require 'template-parts/layout/head.php';
+<?php
 require_once './functions/helpers.php';
-require_once './functions/database.php';
-require_once './functions/users.php';
 
-middleware('auth');
 $auth = getAuth();
 ?>
 
