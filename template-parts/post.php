@@ -23,7 +23,6 @@
         </form>
 
         <p class="mb-0"><?php echo $post['body']; ?></p>
-
     </div>
 
     <div class="card-footer d-flex align-items-center justify-content-between">
