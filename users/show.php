@@ -40,7 +40,7 @@ require_once '../template-parts/layout/head.php'; ?>
                 <div class="row g-4">
                     <?php foreach ($posts as $post): ?>
                         <div class="col-md-6 col-lg-4">
-                            <?php require '../template-parts/post.php'; ?>
+                            <?php require '../template-parts/post-form.php'; ?>
                         </div>
                     <?php endforeach; ?>
                 </div>

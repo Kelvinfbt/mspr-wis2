@@ -5,27 +5,19 @@ require_once '../functions/helpers.php';
 require_once '../functions/users.php';
 require_once '../functions/post.php';
 
+$post = getPost($_GET['id']);
 
-
-
-$post = getPosts($_GET['id']);
-$author = getPostAuthor($post);
-
-
-if ($id = getValue($_GET['id'])) {
-    $user = getUser($id);
-} else {
-    $user = getAuth();
+if(!getValue($post)){
+    header('Location: /');
+    exit;
 }
 
-
-$body = $post['body'];
+$author = getPostAuthor($post);
 
 $page = [
-        'body'=>$post['body'],
- ];
-
-?>
+    'body' => $post['body'],
+    'media' => $post['media'],
+]; ?>
 
 <main>
     <div class="card mb-3">

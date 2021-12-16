@@ -1,11 +1,6 @@
 <?php require_once 'template-parts/layout/head.php';
 require_once 'functions/database.php';
 
-$tmpName = $_FILES['file']['tmp_name'];
-$name = $_FILES['file']['name'];
-$size = $_FILES['file']['size'];
-$error = $_FILES['file']['error'];
-
 middleware('auth');
 
 ?>
@@ -19,7 +14,7 @@ middleware('auth');
             </div>
 
                 <div class="col-6">
-                    <?php require_once 'template-parts/post.php'; ?>
+                    <?php require_once 'template-parts/post-form.php'; ?>
 
                 </div>
 
