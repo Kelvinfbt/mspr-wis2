@@ -46,16 +46,12 @@ if (!empty($_POST)) {
     // On créé l'utilisateur
     $id = storeUser($data);
 
-    // On shoot un email
-    //mail($data['email'], 'Bienvenue', 'Coucou');
-
     // On démare la session
-
     $_SESSION = [
         'auth_id' => $id,
     ];
-//print_r($data);
 
     //On redirige vers la home
-     header('../../');
-    }
+    header('Location: /');
+    exit;
+}

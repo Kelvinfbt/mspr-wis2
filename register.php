@@ -8,7 +8,7 @@ middleware('guest');
     <section id="register-form">
         <div class="container container_register">
 
-            <div class="card mx-auto shadow mt-5">
+            <div class="card mx-auto shadow mt-4">
 
                 <div class="card-body">
 
