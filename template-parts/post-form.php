@@ -179,7 +179,22 @@
 </form>
 
 <script>
-
+    document.addEventListener('DOMContentLoaded', function () {
+        // On cherche le bouton
+        let button = document.getElementById('trigger');
+        // On vérifie que le bouton est sur la page
+        if (button) {
+            // On écoute pour un clic sur le bouton
+            button.addEventListener('click', function () {
+                let card = document.getElementById('choose');
+                if(card){
+                    card.classList.toggle('visually-hidden');
+                }
+            });
+        } else {
+            console.log('Pas de bouton sur la page');
+        }
+    });
     /*
     document.addEventListener('DOMContentLoaded', function () {
         // Obtenir l'entrée
