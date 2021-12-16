@@ -15,7 +15,6 @@ middleware('auth');
 
                 <div class="col-6">
                     <?php require_once 'template-parts/post-form.php'; ?>
-
                 </div>
 
             <div class="col">
