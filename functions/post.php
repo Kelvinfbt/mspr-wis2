@@ -10,8 +10,7 @@ require_once 'database.php';
 function getPosts()
 {
     $dbh = connectDB();
-    $stmt = $dbh->prepare('SELECT * FROM posts WHERE id = :id');
-    $stmt->bindParam(':id',$id);
+    $stmt = $dbh->prepare('SELECT * FROM posts');
     $stmt->execute();
 
     return $stmt->fetch(PDO::FETCH_ASSOC);

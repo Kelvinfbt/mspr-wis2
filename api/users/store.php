@@ -57,5 +57,5 @@ if (!empty($_POST)) {
 //print_r($data);
 
     //On redirige vers la home
-     header('../../users/index.php');
+     header('../../');
     }

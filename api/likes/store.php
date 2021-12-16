@@ -4,6 +4,7 @@ require_once '../../functions/database.php';
 require_once '../../functions/helpers.php';
 require_once '../../functions/users.php';
 require_once '../../functions/post.php';
+require_once '../../functions/like.php';
 
 
 middleware('auth');
@@ -22,8 +23,6 @@ $auth = getAuth();
 
 
     //print_r($data);
-
-
 
 
     // On créé l'article et on le stock en base

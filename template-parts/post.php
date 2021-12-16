@@ -6,8 +6,7 @@
         <textarea name="body" class="text-post form-control" placeholder="Ajouter un nouveau post" id="body"></textarea>
     </div>
 
-
-    <div class="row g-1">
+    <div id="choose" class="row g-1">
 
         <div class="col-md-6">
             <label for="media"></label>

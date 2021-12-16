@@ -19,7 +19,7 @@ if ($id = getValue($_GET['id'])) {
 }
 
 
-$body = $_POST['body'];
+$body = $post['body'];
 
 $page = [
         'body'=>$post['body'],
@@ -39,6 +39,5 @@ $page = [
             </form>
             <p class="card-text"><small class="text-muted">il y a 10 min</small></p>
         </div>
-
     </div>
 </main>
