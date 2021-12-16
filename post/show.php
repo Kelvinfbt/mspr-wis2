@@ -32,13 +32,13 @@ $page = [
         <img src="https://via.placeholder.com/100x50" class="card-img-top" alt="">
         <div class="card-body">
             <p><?php echo $post['body']; ?></p>
-            <a href="">Likes</a>
-            <p class="card-text"><small class="text-muted">il y a 10 min</small></p>
-        </div>
-            <form action="../" method="POST">
+            <form action="../api/likes/store.php" method="POST">
                 <button type="submit" class="btn btn-outline-danger btn-sm">
                     like
                 </button>
             </form>
+            <p class="card-text"><small class="text-muted">il y a 10 min</small></p>
+        </div>
+
     </div>
 </main>
