@@ -1,0 +1,35 @@
+#post_form {
+  margin-bottom: 1rem;
+  .col-tag{
+    margin-top: 28px;
+  }
+  .text-post{
+    border-radius: 10px;
+    height: 100px;
+  }
+  .btn-post{
+    border: 2px solid #86CCB0;
+
+  }
+  .btn-postsubmit{
+    border: 2px solid #86CCB0;
+    width: 100px;
+    justify-content: center;
+  }
+<<<<<<< HEAD:src/scss/components/_post.scss
+
+    }
+=======
+  #show-post {
+    display: flex;
+    width: 100%;
+    margin: 0;
+    .container_post {
+      margin-left: auto;
+      margin-right: auto;
+      width: 900px;
+      padding-top: 100px;
+    }
+  }
+}
+>>>>>>> master:src/scss/components/_post-form.scss
