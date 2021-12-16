@@ -1,4 +1,10 @@
 <?php require_once 'template-parts/layout/head.php';
+require_once 'functions/database.php';
+
+$tmpName = $_FILES['file']['tmp_name'];
+$name = $_FILES['file']['name'];
+$size = $_FILES['file']['size'];
+$error = $_FILES['file']['error'];
 
 middleware('auth');
 
@@ -23,15 +29,15 @@ middleware('auth');
                     <form class="d-flex py-3">
                         <input class="form-control me-2 shadow-sm" type="search" placeholder="Search"
                                aria-label="Search">
-                        <button class="btn" type="submit">Search</button>
+                        <button class="btn btn-search" type="submit">Search</button>
                     </form>
                 </div>
 
                 <div class="notifs-list">
                     <div class="list-group shadow-sm">
-                        <a class="list-group-item list-group-item-secondary text-center">Notifications</a>
-                        <a href="#" class="list-group-item">Dorian Candy</a>
-                        <a href="#" class="list-group-item">Kelvin Fabert</a>
+                        <a class="list-group-item list-group-item-secondary text-center">Conseils</a>
+                        <a href="#" class="list-group-item">Musculation</a>
+                        <a href="#" class="list-group-item">Fitness</a>
 
                     </div>
                 </div>

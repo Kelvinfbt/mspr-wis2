@@ -22,7 +22,7 @@ if (getValue($_POST)) {
     ];
 
 
-    //print_r($data);
+    print_r($data);
 
 
 
@@ -33,6 +33,6 @@ if (getValue($_POST)) {
 
     // On redirige l'utilisateur sur la page de l'article
 
-    header("Location: /post/show.php?id=$postId");
+    //header("Location: /post/show.php?id=$postId");
     //exit;
 }

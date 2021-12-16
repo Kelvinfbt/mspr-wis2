@@ -19,7 +19,7 @@
                 <div class="card card-body shadow-sm p-3 bg-white rounded">
                     <form action="functions/upload.php" method="post" name="first_form" enctype="multipart/form-data">
                         <label for="file">Télécharger votre image</label>
-                        <input class="input_media" type="file" name="userfile"/>
+                        <input class="input_media" type="file" name="file"/>
                     </form>
                 </div>
             </div>

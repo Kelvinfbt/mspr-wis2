@@ -11312,7 +11312,7 @@ textarea.form-control-lg {
   color: black;
 }
 #sidebar .nav-item .nav-link:hover {
-  color: #86CCB0;
+  color: white;
 }
 #sidebar .logout {
   display: flex;
@@ -11321,6 +11321,11 @@ textarea.form-control-lg {
 #sidebar .logout a {
   padding: 1px 2.5em;
   background-color: #86CCB0;
+}
+
+.nav_sidebar {
+  padding-top: 5px;
+  padding-bottom: 5px;
 }
 
 #login-form {
@@ -11347,7 +11352,7 @@ textarea.form-control-lg {
   color: black;
 }
 #sidebar .nav-item .nav-link:hover {
-  color: #86CCB0;
+  color: white;
 }
 #sidebar .logout {
   display: flex;
@@ -11356,6 +11361,11 @@ textarea.form-control-lg {
 #sidebar .logout a {
   padding: 1px 2.5em;
   background-color: #86CCB0;
+}
+
+.nav_sidebar {
+  padding-top: 5px;
+  padding-bottom: 5px;
 }
 
 .button-login {
@@ -11381,6 +11391,11 @@ textarea.form-control-lg {
 }
 #home .list-group .list-group-item:hover {
   color: #86CCB0;
+}
+
+.btn-search {
+  border: 2px solid #1C2C3B;
+  margin-right: 50px;
 }
 
 #hero-account .container .row-account .avatar .images {

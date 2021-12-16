@@ -13,7 +13,7 @@
       color: black;
 
       &:hover {
-        color: #86CCB0;
+        color: white;
       }
     }
   }
@@ -25,4 +25,9 @@
       background-color: $primary;
     }
   }
+}
+
+.nav_sidebar{
+  padding-top: 5px;
+  padding-bottom: 5px;
 }
