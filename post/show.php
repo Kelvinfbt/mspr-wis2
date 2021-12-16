@@ -21,6 +21,24 @@ $page = [
 
 <main>
     <section id="show-post">
+<<<<<<< HEAD
+        <div class="container">
+            <div class="card-header"></div>
+            <p>Nom d'utilisateur</p>
+            <div class="card-image-post">
+                <img src="https://via.placeholder.com/500x500" alt="">
+            </div>
+            <div class="card-body">
+                <button type="submit" class="btn btn-outline-danger btn-sm">
+                    like
+                </button>
+                <p><?php echo $post['body']; ?></p>
+                <form action="../api/likes/store.php" method="POST">
+                </form>
+                <p class="card-text"><small class="text-muted">il y a 10 min</small></p>
+                <a href="api/posts/edit.php?id=<?php echo $post['id'] ?>">Modifier</a>
+
+=======
         <div class="container container-post">
             <div class="card-post card mb-3 mx-auto shadow mt-3">
                 <img src="https://via.placeholder.com/100x50" class="card-img-top" alt="">
@@ -36,6 +54,7 @@ $page = [
                     <p class="card-text"><small class="text-muted">il y a 10 min</small></p>
                     <a href="/api/posts/edit.php?id=<?php echo $post['id'] ?>">Modifier</a>
                 </div>
+>>>>>>> master
             </div>
         </div>
     </section>

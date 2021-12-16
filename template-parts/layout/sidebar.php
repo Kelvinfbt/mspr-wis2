@@ -11,7 +11,9 @@ $auth = getAuth();
     <nav>
         <ul class="nav flex-column">
             <li class="nav-item">
+                <a href="index.php">
                 <div class="w-25" id="welcome"></div>
+                </a>
             </li>
             <li class="nav_sidebar nav-item">
                 <a class="nav-link" href="index.php">
