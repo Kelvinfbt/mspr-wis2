@@ -1,13 +1,13 @@
-
 <form id="post_form" class="form pt-4" method="post" action="api/posts/store.php">
     <h1 class="h1 text-center">Hello, quoi de neuf ?</h1>
     <div class="form-group mb-3">
         <label for="body"></label>
         <textarea name="body" class="text-post form-control" placeholder="Ajouter un nouveau post" id="body"></textarea>
+        <a id="trigger" class="btn btn-outline-primary">
+            Click me !
+        </a>
     </div>
-
     <div id="choose" class="row g-1">
-
         <div class="col-md-6">
             <label for="media"></label>
             <button type="button" data-bs-toggle="collapse" data-bs-target="#collapsePicture"
@@ -175,10 +175,38 @@
         </div>
         <button type="submit" class="btn btn-postsubmit mt-3">Publier</button>
     </div>
-
 </form>
 
+
+
 <script>
+
+
+
+    document.addEventListener('DOMContentLoaded', function () {
+        // On cherche le bouton
+        let button = document.getElementById('trigger');
+        // On vérifie que le bouton est sur la page
+        if (button) {
+            // On écoute pour un clic sur le bouton
+            button.addEventListener('click', function () {
+                let card = document.getElementById('choose');
+                if(card){
+                    card.classList.toggle('visually-hidden');
+                }
+            });
+        } else {
+            console.log('Pas de bouton sur la page');
+        }
+    });
+
+
+
+
+
+
+
+
 
     /*
     document.addEventListener('DOMContentLoaded', function () {
