@@ -1,5 +1,7 @@
 <?php require_once $_SERVER['DOCUMENT_ROOT'] . '/functions/helpers.php'; ?>
 <?php require_once $_SERVER['DOCUMENT_ROOT'] . '/functions/users.php'; ?>
+<?php require_once $_SERVER['DOCUMENT_ROOT'] . '/functions/post.php'; ?>
+<?php require_once $_SERVER['DOCUMENT_ROOT'] . '/functions/like.php'; ?>
 
 <?php $auth = getAuth(); ?>
 
@@ -23,7 +25,6 @@
         </form>
 
         <p class="mb-0"><?php echo $post['body']; ?></p>
-
     </div>
 
     <div class="card-footer d-flex align-items-center justify-content-between">

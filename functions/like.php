@@ -42,12 +42,3 @@ function unlike($data)
     return true;
 }
 
-function toggleLike($data)
-{
-    if (getLikes($data)) {
-        return unlike($data);
-    } else {
-        return like($data);
-    }
-
-}
