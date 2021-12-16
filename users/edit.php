@@ -11,7 +11,7 @@ $auth = getAuth(); ?>
 
             <h1>Modifier le profil de <?php echo $auth['username']; ?></h1>
 
-            <form action="" method="POST">
+            <form action="api/users/store.php" method="POST">
 
                 // FORM
 

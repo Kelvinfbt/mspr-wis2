@@ -13,7 +13,9 @@ $posts = getPosts();
 <main id="home">
 
     <section id="home-posts">
+
         <?php require_once 'template-parts/post-form.php'; ?>
+
         <hr>
         <h3 class="text-center mb-5">Dernières publications :</h3>
 

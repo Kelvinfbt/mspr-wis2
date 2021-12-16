@@ -11,7 +11,7 @@
 
     </div>
 
-    <div id="choose" class="row g-1">
+    <div id="choose" class="row g-6">
 
         <div class="col-md-6">
             <label for="media"></label>

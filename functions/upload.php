@@ -1,20 +1,28 @@
 <?php
 
-require_once 'functions/database.php';
+require_once '../functions/database.php';
 
 
-if (isset($_FILES['file'])) {
-    $tmpName = $_FILES['file']['tmp_name'];
-    $name = $_FILES['file']['name'];
-    $size = $_FILES['file']['size'];
-    $error = $_FILES['file']['error'];
+$uploaddir = '/uploads';
+$uploadfile = $uploaddir . basename($_FILES['userfile']['name']);
+
+echo '<pre>';
+if (move_uploaded_file($_FILES['userfile']['tmp_name'], $uploadfile)) {
+    echo "Le fichier est téléchargé";
+} else {
+    echo "Le fichier n'est pas téléchargé";
 }
 
+echo 'Voici quelques informations de débogage :';
+print_r($_FILES);
 
-$tmpName = $_FILES['file']['tmp_name'];
-$name = $_FILES['file']['name'];
-$size = $_FILES['file']['size'];
-$error = $_FILES['file']['error'];
+echo '</pre>';
 
 
-move_uploaded_file($tmpName, './upload/' . $name);
+
+
+
+
+
+// Déplacer le fichier
+move_uploaded_file($uploadfile, $uploaddir);
