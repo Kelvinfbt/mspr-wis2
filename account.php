@@ -74,7 +74,7 @@ $author = getAuth();
                             <ul class="list-group list-group-flush">
                                 <li class="list-group-item">
                                     <strong><span class="list-title">À Propos :</span></strong>
-                                    <span class="list-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores culpa dolor, mollitia nemo quo suscipit? At molestias mollitia omnis praesentium, quidem suscipit ut voluptates. Deserunt ea minus nemo quas ratione.</span>
+                                    <span class="list-body">Passionné de musculation depuis toujours, j'aime partager mes progrès avec mes amis et apprendre des nouvelles astuces ! 😊</span>
                                 </li>
                                 <li class="list-group-item">
                                     <strong><span class="list-title">Sport : </span></strong>
