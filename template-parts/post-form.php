@@ -130,19 +130,6 @@
             </div>
 
         </div>
-
-        <div class="col-md-6">
-            <button type="button" data-bs-toggle="collapse" data-bs-target="#collapselieu" aria-expanded="false"
-                    aria-controls="collapselieu" class="btn btn-post w-100">
-                <img alt="" src="/assets/images/lieu.png" width="30px" height="30px" loading="lazy">
-                <span>Lieu</span>
-            </button>
-        </div>
-        <div class="collapse" id="collapselieu">
-            <div class="card card-body shadow-sm p-3 bg-white rounded">
-            </div>
-        </div>
-
         <div class="col-md-6">
             <button type="button" data-bs-toggle="collapse" data-bs-target="#collapseGif" aria-expanded="false"
                     aria-controls="collapseGif" class="btn btn-post w-100">
@@ -163,19 +150,6 @@
                 </div>
                 <div class="container js-container">
                 </div>
-            </div>
-        </div>
-
-        <div class="col-md-6">
-            <button type="button" data-bs-toggle="collapse" data-bs-target="#collapseSmiley" aria-expanded="false"
-                    aria-controls="collapseSmiley" class="btn btn-post w-100">
-                <img alt="" src="/assets/images/smile.png" width="30px" height="30px" loading="lazy">
-                <span>Smiley</span>
-            </button>
-        </div>
-        <div class="collapse" id="collapseSmiley">
-            <div class="card card-body shadow-sm p-3 bg-white rounded">
-
             </div>
         </div>
         <button type="submit" class="btn btn-postsubmit mt-3">Publier</button>
