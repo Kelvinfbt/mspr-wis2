@@ -3,7 +3,12 @@
     <h1 class="h1 text-center">Hello, quoi de neuf ?</h1>
     <div class="form-group mb-3">
         <label for="body"></label>
-        <textarea name="body" class="text-post form-control" placeholder="Ajouter un nouveau post" id="body"></textarea>
+        <textarea name="body" class="text-post form-control" placeholder="Ajouter un nouveau post" id="body">
+        </textarea>
+        <a id="trigger" class="btn btn-outline-primary">
+            Click me !
+        </a>
+
     </div>
 
     <div id="choose" class="row g-1">

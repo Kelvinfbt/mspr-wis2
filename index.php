@@ -14,7 +14,9 @@ middleware('auth');
             </div>
 
                 <div class="col-6">
+
                     <?php require_once 'template-parts/post-form.php'; ?>
+
                 </div>
 
             <div class="col">
@@ -29,7 +31,7 @@ middleware('auth');
 
                 <div class="notifs-list droite">
                     <div class="list-group shadow-sm">
-                        <a class="list-group-item list-group-item-secondary text-center">Conseils</a>
+                        <a class="list-group-item list-group-item-primary text-center">Conseils</a>
                         <a href="#" class="list-group-item">Musculation</a>
                         <a href="#" class="list-group-item">Fitness</a>
 
@@ -38,7 +40,7 @@ middleware('auth');
 
                 <div class="friends-list py-3 droite">
                     <div class="list-group shadow-sm">
-                        <a href="#" class="list-group-item list-group-item-secondary text-center">Liste d'amis</a>
+                        <a href="#" class="list-group-item list-group-item-primary text-center">Liste d'amis</a>
                         <a href="#" class="list-group-item">Dorian Candy</a>
                         <a href="#" class="list-group-item">Kelvin Fabert</a>
                         <a href="#" class="list-group-item">Coline Cabus</a>
