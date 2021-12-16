@@ -20,14 +20,14 @@ function like($data){
     return $dbh->lastInsertId();
 }
 
+
 function getLikes($data){
     $dbh = connectDB();
-    $stmt = $dbh->prepare('SELECT * FROM likes WHERE  post_id = :post_id AND user_id = :user_id LIMIT 1');
+    $stmt = $dbh->prepare('SELECT * FROM likes WHERE  user_id = :user_id');
     $stmt->bindParam(':user_id', $data['user_id']);
-    $stmt->bindParam(':post_id', $data['post_id']);
     $stmt->execute();
 
-    return $stmt->fetch(PDO::FETCH_ASSOC);
+    return $stmt->fetchAll(PDO::FETCH_ASSOC);
 
 }
 
