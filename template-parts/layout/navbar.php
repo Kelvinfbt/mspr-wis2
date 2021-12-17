@@ -1,4 +1,4 @@
-<?php require_once 'functions/users.php';
+<?php require $_SERVER['DOCUMENT_ROOT'] .'functions/users.php';
 
 $auth = getAuth();
 ?>

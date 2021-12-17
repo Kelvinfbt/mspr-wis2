@@ -7,7 +7,7 @@ middleware('auth');
 $users = getUsers();
 $page = ['title' => 'Liste des utilisateurs'];
 
-require_once '../template-parts/layout/header.php'; ?>
+require $_SERVER['DOCUMENT_ROOT'] . '/template-parts/layout/header.php'; ?>
 
     <main id="main">
 

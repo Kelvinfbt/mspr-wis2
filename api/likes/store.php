@@ -1,10 +1,10 @@
 <?php
 
-require_once '../../functions/database.php';
-require_once '../../functions/helpers.php';
-require_once '../../functions/users.php';
-require_once '../../functions/post.php';
-require_once '../../functions/like.php';
+require $_SERVER['DOCUMENT_ROOT'] . '/functions/database.php';
+require $_SERVER['DOCUMENT_ROOT'] . '/functions/helpers.php';
+require $_SERVER['DOCUMENT_ROOT'] . '/functions/users.php';
+require $_SERVER['DOCUMENT_ROOT'] . '/functions/post.php';
+require $_SERVER['DOCUMENT_ROOT'] . '/functions/like.php';
 
 
 middleware('auth');

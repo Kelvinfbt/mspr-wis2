@@ -1,7 +1,7 @@
 <?php
 
-require_once 'helpers.php';
-require_once 'database.php';
+require $_SERVER['DOCUMENT_ROOT'] . '/functions/helpers.php';
+require $_SERVER['DOCUMENT_ROOT'] . '/functions/database.php';
 
 function getAuth()
 {

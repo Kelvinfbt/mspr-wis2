@@ -1,6 +1,6 @@
 <?php
-require_once '../../functions/helpers.php';
-require_once '../../functions/post.php';
+require $_SERVER['DOCUMENT_ROOT'] . '/functions/helpers.php';
+require $_SERVER['DOCUMENT_ROOT'] . '/functions/post.php';
 
 $id = $_GET['id'];
 

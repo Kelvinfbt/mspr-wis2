@@ -1,9 +1,9 @@
 <?php
-require_once '../template-parts/layout/head.php';
-require_once '../functions/database.php';
-require_once '../functions/helpers.php';
-require_once '../functions/users.php';
-require_once '../functions/post.php';
+require $_SERVER['DOCUMENT_ROOT'] . '/template-parts/layout/head.php';
+require $_SERVER['DOCUMENT_ROOT'] . '/functions/database.php';
+require $_SERVER['DOCUMENT_ROOT'] . '/functions/helpers.php';
+require $_SERVER['DOCUMENT_ROOT'] . '/functions/users.php';
+require $_SERVER['DOCUMENT_ROOT'] . '/functions/post.php';
 
 $post = getPost($_GET['id']);
 

@@ -1,7 +1,7 @@
-<?php require 'template-parts/layout/head.php';
-require_once './functions/helpers.php';
-require_once './functions/database.php';
-require_once './functions/users.php';
+<?php require $_SERVER['DOCUMENT_ROOT'] . 'template-parts/layout/head.php';
+require $_SERVER['DOCUMENT_ROOT'] . './functions/helpers.php';
+require $_SERVER['DOCUMENT_ROOT'] . './functions/database.php';
+require $_SERVER['DOCUMENT_ROOT'] . './functions/users.php';
 $author = getAuth();
 middleware('auth');
 $user = getAuth();

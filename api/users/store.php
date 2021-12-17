@@ -1,7 +1,7 @@
 <?php
 
-require_once '../../functions/helpers.php';
-require_once '../../functions/users.php';
+require $_SERVER['DOCUMENT_ROOT'] .'/functions/helpers.php';
+require $_SERVER['DOCUMENT_ROOT'] .'/functions/users.php';
 
 middleware('guest');
 

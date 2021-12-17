@@ -1,6 +1,6 @@
 <?php require $_SERVER['DOCUMENT_ROOT'] . "/template-parts/layout/head.php"; ?>
 
-<?php require_once 'functions/users.php'; ?>
+<?php require $_SERVER['DOCUMENT_ROOT'] .'functions/users.php'; ?>
 <?php
 $author = getAuth();
 ?>

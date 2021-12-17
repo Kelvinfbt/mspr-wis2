@@ -1,6 +1,6 @@
 <?php
 
-require_once 'database.php';
+require $_SERVER['DOCUMENT_ROOT'] . 'functions/database.php';
 
 /**
  * Récupère tous les articles
