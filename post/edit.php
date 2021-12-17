@@ -14,36 +14,32 @@ $page = [
 
 ?>
 
-
 <?php require_once $_SERVER['DOCUMENT_ROOT'] . '/template-parts/layout/header.php'; ?>
 
-<main>
+    <main>
 
-    <section>
-        <div class="container">
-
-
+        <section>
             <form action="/api/posts/delete.php?id=<?php echo $post['id']; ?>" method="POST" class="mt-2 float-end">
-                <button type="submit" class="btn btn-outline-danger">Supprimer</button>
+                <button type="submit" class="me-5 btn btn-outline-danger">Supprimer</button>
             </form>
 
-            <form id="post_form" method="POST" action="/api/posts/update.php?id=<?php echo $post['id']; ?>">
+            <form style="" class="form-update mt-5" id="post_form" method="POST"
+                  action="/api/posts/update.php?id=<?php echo $post['id']; ?>">
 
-                <h1 class="h1 text-center">Modifier le post</h1>
+                <h1 class="h1 mb-5 text-center">Modifier le post</h1>
 
-                <div class="form-group mb-3">
-                    <label for="body">Message</label>
-                    <textarea name="body" class="text-post form-control" placeholder="Ajouter un nouveau post" id="body">
-            <?php echo $_POST['body']; ?>
-        </textarea>
+                <div style=" max-width: 700px" class="form-group mb-3">
+                        <textarea name="body" class="text-post form-control" placeholder="Ajouter un nouveau post"
+                                  id="body"><?php echo $_POST['body']; ?>
+                        </textarea>
                 </div>
 
-                <div id="choose" class="row g-1">
+                <div id="choose" class="row g-2">
 
-                    <div class="col-md-6">
+                    <div class="col-lg-6">
                         <label for="media"></label>
                         <button type="button" data-bs-toggle="collapse" data-bs-target="#collapsePicture"
-                                class="btn btn-post w-100">
+                                class="btn w-100 btn-outline-primary">
                             <img src="/assets/images/image.png" alt="" width="30px" height="30px" loading="lazy">
                             <span>Photos/Vidéos</span>
                         </button>
@@ -57,17 +53,15 @@ $page = [
                             </div>
                         </div>
                     </div>
-                    <button type="submit" class="btn btn-postsubmit mt-3">Mettre à jour</button>
+                    <div class="col-lg-6">
+                        <button type="submit" class="btn1 btn-outline-primary mt-4 w-100 btn">Mettre à jour</button>
+                    </div>
                 </div>
             </form>
 
 
-        </div>
-    </section>
 
-</main>
+        </section>
 
-
-
-
+    </main>
 <?php require_once $_SERVER['DOCUMENT_ROOT'] . '/template-parts/layout/footer.php'; ?>

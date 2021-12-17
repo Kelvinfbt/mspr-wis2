@@ -11474,3 +11474,15 @@ textarea.form-control-lg {
   margin-left: 15px;
   margin-top: 15px;
 }
+
+.container-update {
+  width: 400px;
+}
+
+.form-update {
+  margin: 300px;
+}
+
+.btn1 {
+  height: 45px;
+}

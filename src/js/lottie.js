@@ -9,6 +9,15 @@ Lottie.loadAnimation({
     path: 'assets/lottie/login.json'
 });
 
+let update = document.getElementById('update');
+Update.loadAnimation({
+    container: update,
+    renderer: 'svg',
+    loop: true,
+    autoplay: true,
+    path: 'assets/lottie/update.json'
+});
+
 let welcome = document.getElementById('welcome');
 Lottie.loadAnimation({
     container: welcome,

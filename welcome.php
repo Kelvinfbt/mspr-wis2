@@ -1,4 +1,4 @@
-<?php require $_SERVER['DOCUMENT_ROOT'] .'template-parts/layout/header.php'; ?>
+<?php require $_SERVER['DOCUMENT_ROOT'] .'/template-parts/layout/header.php'; ?>
 
 <main style="background-color: #ffffff; height: 100vh;">
     <section class="container-fluid p-5">
@@ -14,5 +14,5 @@
         </div>
     </section>
 </main>
-
+    <script src="/assets/js/app.js"></script>
 <?php require_once $_SERVER['DOCUMENT_ROOT'] . '/template-parts/layout/footer.php'; ?>
