@@ -11285,7 +11285,7 @@ textarea.form-control-lg {
   margin-bottom: 1rem;
 }
 #post_form .col-tag {
-  margin-top: 28px;
+  margin-top: 23px;
 }
 #post_form .text-post {
   border-radius: 10px;
@@ -11377,6 +11377,15 @@ textarea.form-control-lg {
   border: 2px solid #1C2C3B;
   width: 200px;
   font-size: 20px;
+}
+
+.header {
+  height: 100px;
+}
+
+.btn-postupdate {
+  width: 300px;
+  border: 2px solid #86CCB0;
 }
 
 #home .droite {
