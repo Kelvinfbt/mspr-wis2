@@ -1,13 +1,14 @@
 <?php
 
-require $_SERVER['DOCUMENT_ROOT'] . 'functions/database.php';
-require $_SERVER['DOCUMENT_ROOT'] . 'functions/users.php';
-require $_SERVER['DOCUMENT_ROOT'] . 'functions/post.php';
-
-require_once 'template-parts/layout/header.php';
+require_once $_SERVER['DOCUMENT_ROOT'] . '/functions/database.php';
+require_once $_SERVER['DOCUMENT_ROOT'] . '/functions/users.php';
+require_once $_SERVER['DOCUMENT_ROOT'] . '/functions/post.php';
+require_once $_SERVER['DOCUMENT_ROOT'] . '/template-parts/layout/header.php';
 
 middleware('auth');
+
 $posts = getPosts();
+
 ?>
 
 <main id="home">
@@ -38,7 +39,7 @@ $posts = getPosts();
     </section>
 </main>
 
-<?php require_once 'template-parts/layout/footer.php' ?>
+<?php require_once $_SERVER['DOCUMENT_ROOT'] . '/template-parts/layout/footer.php' ?>
 
 
 

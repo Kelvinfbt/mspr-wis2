@@ -1,9 +1,9 @@
 <?php
-require $_SERVER['DOCUMENT_ROOT'] . '/template-parts/layout/head.php';
-require $_SERVER['DOCUMENT_ROOT'] . '/functions/database.php';
-require $_SERVER['DOCUMENT_ROOT'] . '/functions/helpers.php';
-require $_SERVER['DOCUMENT_ROOT'] . '/functions/users.php';
-require $_SERVER['DOCUMENT_ROOT'] . '/functions/post.php';
+require_once $_SERVER['DOCUMENT_ROOT'] . '/functions/helpers.php';
+require_once $_SERVER['DOCUMENT_ROOT'] . '/functions/users.php';
+require_once $_SERVER['DOCUMENT_ROOT'] . '/functions/post.php';
+
+require_once $_SERVER['DOCUMENT_ROOT'] . '/template-parts/layout/header.php';
 
 $post = getPost($_GET['id']);
 
@@ -54,3 +54,4 @@ class="card-img-top" alt="">
 
 
 
+<?php require_once $_SERVER['DOCUMENT_ROOT'] . '/template-parts/layout/footer.php'; ?>

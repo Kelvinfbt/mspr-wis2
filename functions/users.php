@@ -1,7 +1,7 @@
 <?php
 
-require $_SERVER['DOCUMENT_ROOT'] . '/functions/helpers.php';
-require $_SERVER['DOCUMENT_ROOT'] . '/functions/database.php';
+require_once $_SERVER['DOCUMENT_ROOT'] . '/functions/helpers.php';
+require_once $_SERVER['DOCUMENT_ROOT'] . '/functions/database.php';
 
 function getAuth()
 {
@@ -18,6 +18,7 @@ function getAuth()
 
     return $stmt->fetch(PDO::FETCH_ASSOC);
 }
+
 function getUser($id)
 {
     $dbh = connectDB();
@@ -27,6 +28,7 @@ function getUser($id)
 
     return $stmt->fetch(PDO::FETCH_ASSOC);
 }
+
 function getUserByEmail($email)
 {
     $dbh = connectDB();
@@ -36,6 +38,7 @@ function getUserByEmail($email)
 
     return $stmt->fetch(PDO::FETCH_ASSOC);
 }
+
 function getUserByEmailAndPassword($email, $password)
 {
     $dbh = connectDB();
@@ -46,6 +49,7 @@ function getUserByEmailAndPassword($email, $password)
 
     return $stmt->fetch(PDO::FETCH_ASSOC);
 }
+
 function getUsers()
 {
     $dbh = connectDB();
@@ -54,6 +58,7 @@ function getUsers()
 
     return $stmt->fetchAll(PDO::FETCH_ASSOC);
 }
+
 function storeUser($data)
 {
     $dbh = connectDB();
@@ -65,6 +70,7 @@ function storeUser($data)
 
     return $dbh->lastInsertId();
 }
+
 function updateUser($id, $data)
 {
     $dbh = connectDB();
@@ -81,9 +87,11 @@ function updateUser($id, $data)
 
     return $id;
 }
+
 function delete($id)
 {
 }
+
 function getUserPosts($id)
 {
     $dbh = connectDB();

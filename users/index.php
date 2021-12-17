@@ -1,6 +1,6 @@
 <?php
-require_once '../template-parts/layout/head.php';
-require_once '../functions/users.php';
+require_once $_SERVER['DOCUMENT_ROOT'] . '/functions/helpers.php';
+require_once $_SERVER['DOCUMENT_ROOT'] . '/functions/users.php';
 
 middleware('auth');
 
@@ -41,4 +41,5 @@ require $_SERVER['DOCUMENT_ROOT'] . '/template-parts/layout/header.php'; ?>
 
     </main>
 
-<?php require_once '../template-parts/layout/footer.php'; ?>
+
+<?php require_once $_SERVER['DOCUMENT_ROOT'] . '/template-parts/layout/footer.php'; ?>

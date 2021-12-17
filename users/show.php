@@ -16,9 +16,9 @@ if ($id = getValue($_GET['id'])) {
 $posts = getUserPosts($user['id']);
 ?>
 
-<?php require_once '../template-parts/layout/head.php'; ?>
+<?php require_once $_SERVER['DOCUMENT_ROOT'] . '/template-parts/layout/header.php'; ?>
 
-<?php require_once '../template-parts/layout/header-friends.php' ?>
+<?php require_once $_SERVER['DOCUMENT_ROOT'] . '/template-parts/layout/header-friends.php' ?>
 
 
     <main id="main">
@@ -115,4 +115,4 @@ $posts = getUserPosts($user['id']);
     </main>
 
 
-<?php require_once '../template-parts/layout/footer.php'; ?>
+<?php require_once $_SERVER['DOCUMENT_ROOT'] . '/template-parts/layout/footer.php'; ?>

@@ -9,16 +9,10 @@ $data = [
         'post_id'=>getValue($_POST['post_id']),
         'user_id'=>$auth['id'],
 
-]
-
-?>
-<?php
+];
 
 $likes = getPostLikes($post['id']);
 $countlikes = count($likes);
-
-
-
 ?>
 <div class="card post-item">
 
@@ -46,7 +40,7 @@ $countlikes = count($likes);
         <small class="text-muted">il y a 10 min</small>
         <?php if ($auth['id'] === $post['user_id']): ?>
             <a class="btn btn-sm btn-outline-warning"
-               href="/api/posts/edit.php?id=<?php echo $post['id'] ?>">Modifier</a>
+               href="/post/edit.php?id=<?php echo $post['id'] ?>">Modifier</a>
         <?php endif; ?>
     </div>
 
