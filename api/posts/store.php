@@ -4,6 +4,7 @@ require_once '../../functions/database.php';
 require_once '../../functions/helpers.php';
 require_once '../../functions/users.php';
 require_once '../../functions/post.php';
+require_once '../../functions/upload.php';
 
 middleware('auth');
 
