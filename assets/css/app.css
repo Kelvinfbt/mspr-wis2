@@ -11388,6 +11388,15 @@ textarea.form-control-lg {
   border: 2px solid #86CCB0;
 }
 
+.header {
+  height: 100px;
+}
+
+.btn-postupdate {
+  width: 300px;
+  border: 2px solid #86CCB0;
+}
+
 .btn-bug {
   margin-left: 130px;
 }

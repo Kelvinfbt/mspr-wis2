@@ -10,19 +10,19 @@ require $_SERVER['DOCUMENT_ROOT'] . '/functions/post.php';
 middleware('auth');
 
 $auth = getAuth();
+
 $data = ['media' => null];
-/*
+
+
 if (getValue($_FILES['media'['tmp_name']])) {
 
-  $data = [
-      
-  ];
+
 
 
     $data['media'] = 'chemin/vers/image';
 }
 
-*/
+
 if (getValue($_POST)) {
 
     // On prépare les données depuis le formulaire

@@ -9,7 +9,6 @@ require $_SERVER['DOCUMENT_ROOT'] . '/functions/like.php';
 
 middleware('auth');
 
-/*$path = storeImage($image);*/
 
 $auth = getAuth();
 
