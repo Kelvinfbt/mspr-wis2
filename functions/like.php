@@ -42,3 +42,12 @@ function unlike($data)
     return true;
 }
 
+function getPostLikes($id)
+{
+    $dbh = connectDB();
+    $stmt = $dbh->prepare('SELECT * FROM likes WHERE post_id = :id');
+    $stmt->bindParam(':id', $id);
+    $stmt->execute();
+
+    return $stmt->fetchAll(PDO::FETCH_ASSOC);
+}

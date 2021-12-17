@@ -3,9 +3,21 @@
 <?php require_once $_SERVER['DOCUMENT_ROOT'] . '/functions/post.php'; ?>
 <?php require_once $_SERVER['DOCUMENT_ROOT'] . '/functions/like.php'; ?>
 
-<?php $auth = getAuth(); ?>
+<?php $auth = getAuth();
+$data = [
+        'user'=>$auth['id'],
+        'post_id'=>getValue($_POST['post_id']),
+        'user_id'=>$auth['id'],
 
+]
+
+?>
 <?php
+
+$likes = getPostLikes($post['id']);
+$countlikes = count($likes);
+
+
 
 ?>
 <div class="card post-item">
@@ -24,7 +36,7 @@
                 </svg>
             </button>
 
-            <span class="ms-2 text-muted">0 likes</span>
+            <span class="ms-2 text-muted"><?=$countlikes?> likes</span>
         </form>
 
         <p class="mb-0"><?php echo $post['body']; ?></p>

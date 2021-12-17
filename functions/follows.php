@@ -22,10 +22,6 @@ function follow($data)
     return $stmt->fetch(PDO::FETCH_ASSOC);
 }
 
-/**
- * @param $data
- * @return bool
- */
 
 function unfollow($data)
 {
