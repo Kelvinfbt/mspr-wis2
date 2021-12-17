@@ -2,9 +2,10 @@
 require_once './functions/helpers.php';
 require_once './functions/database.php';
 require_once './functions/users.php';
-
-middleware('auth');
 $author = getAuth();
+middleware('auth');
+$user = getAuth();
+$post = getUserPosts($user['id']);
 ?>
 
     <main id="main">
@@ -99,10 +100,26 @@ $author = getAuth();
                     <div class="col-6">
                         <div class="card card-account bg-white mb-3" style="max-width: 2000px;">
                             <div class="card-header text-center"><?php echo $author['username']; ?></div>
-                            <div class="card-body">
-                                Pour afficher le post
-                                <?php //require_once 'post/show.php'?>
+
+                            <div class="profile-publication">
+                                <div class="py-4">
+                                    <h2 class="h2 text-center">Dernières publications : </h2>
+                                    <ul class="mt-4 p-2 rounded-2">
+                                        <li>
+                                            <?php if ($posts = getUserPosts($user['id'])): ?>
+
+                                                <?php foreach ($posts as $post): ?>
+
+                                                    <?php require 'template-parts/post.php'; ?>
+
+                                                <?php endforeach; ?>
+
+                                            <?php endif; ?>
+                                        </li>
+                                    </ul>
+                                </div>
                             </div>
+                        </div>
                         </div>
                     </div>
 
