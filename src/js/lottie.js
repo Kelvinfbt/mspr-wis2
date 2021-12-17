@@ -26,3 +26,12 @@ Lottie.loadAnimation({
     autoplay: true,
     path: 'assets/lottie/screen.json'
 });
+
+let bug = document.getElementById('bug');
+Lottie.loadAnimation({
+    container: bug,
+    renderer: 'svg',
+    loop: true,
+    autoplay: true,
+    path: 'assets/lottie/bug.json'
+});

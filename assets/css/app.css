@@ -11388,6 +11388,10 @@ textarea.form-control-lg {
   border: 2px solid #86CCB0;
 }
 
+.btn-bug {
+  margin-left: 130px;
+}
+
 #home .droite {
   position: static;
 }
