@@ -1,44 +1,26 @@
 <?php
-require_once '../../functions/helpers.php';
+require $_SERVER['DOCUMENT_ROOT'] . '/functions/helpers.php';
+require $_SERVER['DOCUMENT_ROOT'] . '/functions/users.php';
 
 middleware('auth');
 
-$username = $_POST['username'];
-$email = $_POST['email'];
-$password = $_POST['password'];
-$about = $_POST['about'];
-$sport = $_POST['sport'];
-$lieu = $_POST['lieu'];
-$niveau = $_POST['niveau'];
-$salle = $_POST['salle'];
-$id = $_GET['id'];
+    $user = getAuth();
 
-$connexion = new PDO('mysql:host=localhost:8889;dbname=msprwis2', 'root', 'root');
+if (getValue($user)) {
 
-$query = $connexion->prepare("UPDATE users SET username = :username, email = :email, password = :password WHERE id = :id");
+    // On prépare les données depuis le formulaire
+    $data = [
+        'username'     => getValue($_POST['username']),
+        'about'     => getValue($_POST['about']),
+        'sport'     => getValue($_POST['sport']),
+        'lieu'     => getValue($_POST['lieu']),
+        'niveau'     => getValue($_POST['niveau']),
+        'salle'     => getValue($_POST['salle']),
+    ];
 
-$stmt = $connexion->prepare('INSERT INTO users (about, sport, lieu, niveau, salle) VALUES (:about, :sport, :lieu, :niveau, :salle)');
-$stmt->bindParam(':about', $data['about']);
-$stmt->bindParam(':sport', $data['sport']);
-$stmt->bindParam(':lieu', $data['lieu']);
-$stmt->bindParam(':niveau', $data['niveau']);
-$stmt->bindParam(':salle', $data['salle']);
-$stmt->execute();
 
-$values = [
-    'username' => $username,
-    'email' => $email,
-    'password' => $password,
-    'about' => $about,
-    'sport' => $sport,
-    'lieu' => $lieu,
-    'niveau' => $niveau,
-    'salle' => $salle,
-    'id' => $id,
-];
+    $userId = updateUser($user['id'], $data);
 
-$query->execute($values);
-
-header('Location:../../account.php');
-
-?>
+    // On redirige l'utilisateur sur la page de l'article
+    header("Location: /account.php");
+}

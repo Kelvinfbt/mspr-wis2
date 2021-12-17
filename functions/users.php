@@ -68,11 +68,15 @@ function storeUser($data)
 function updateUser($id, $data)
 {
     $dbh = connectDB();
-    $stmt = $dbh->prepare('UPDATE users SET username = :username, email = :email, password = :password, updated_at = NOW() WHERE id = :id');
+    $stmt = $dbh->prepare('UPDATE users SET username = :username, about = :about, sport = :sport, lieu = :lieu, niveau = :niveau, salle = :salle, updated_at = NOW() WHERE id = :id');
     $stmt->bindParam(':id', $id);
     $stmt->bindParam(':username', $data['username']);
-    $stmt->bindParam(':email', $data['email']);
-    $stmt->bindParam(':password', $data['password']);
+    $stmt->bindParam(':about', $data['about']);
+    $stmt->bindParam(':sport', $data['sport']);
+    $stmt->bindParam(':lieu', $data['lieu']);
+    $stmt->bindParam(':niveau', $data['niveau']);
+    $stmt->bindParam(':salle', $data['salle']);
+
     $stmt->execute();
 
     return $id;

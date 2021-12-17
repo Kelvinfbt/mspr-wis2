@@ -27,16 +27,6 @@ $auth = getAuth(); ?>
                     </div>
 
                     <div class="mb-3">
-                        <label for="exampleInputEmail1" class="form-label">Email address</label>
-                        <input name="email" type="email" class="form-control" id="email" aria-describedby="emailHelp"
-                               value="<?= $auth['email'] ?>">
-                    </div>
-                    <div class="mb-3">
-                        <label for="exampleInputPassword1" class="form-label">Password</label>
-                        <input name="password" type="password" class="form-control" id="password" value="<?= $auth['password'] ?>">
-                    </div>
-
-                    <div class="mb-3">
                         <label for="exampleInputEmail1" class="form-label">About</label>
                         <input id="about" name="about" type="text" class="form-control" placeholder="About" aria-label="about"
                                value="">
