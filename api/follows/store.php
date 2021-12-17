@@ -12,6 +12,6 @@ $data = [
     'following_id' => $_GET['id'],
 ];
 
-toggleFollow($data);
+follow($data);
 header("Location: /");
 exit;

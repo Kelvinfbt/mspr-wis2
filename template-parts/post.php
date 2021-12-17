@@ -24,7 +24,7 @@
                 </svg>
             </button>
 
-            <span class="ms-2 text-muted"><?php echo '' ?> likes</span>
+            <span class="ms-2 text-muted">0 likes</span>
         </form>
 
         <p class="mb-0"><?php echo $post['body']; ?></p>
