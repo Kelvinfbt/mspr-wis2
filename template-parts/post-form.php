@@ -3,8 +3,7 @@
     <h1 class="h1 text-center">Hello, quoi de neuf ?</h1>
     <div class="form-group mb-3">
         <label for="body"></label>
-        <textarea name="body" class="text-post form-control" placeholder="Ajouter un nouveau post" id="body">
-        </textarea>
+        <textarea name="body" class="text-post form-control" placeholder="Ajouter un nouveau post" id="body"></textarea>
         <a id="trigger" class="btn btn-outline-primary">
             Click me !
         </a>
@@ -21,7 +20,7 @@
             </button>
             <div class="collapse" id="collapsePicture">
                 <div class="card card-body shadow-sm p-3 bg-white rounded">
-                    <form action="functions/upload.php" method="post" name="first_form" enctype="multipart/form-data">
+                    <form action="api/posts/store.php" method="post" name="first_form" enctype="multipart/form-data">
                         <label for="file">Télécharger votre image</label>
                         <input class="input_media" type="file" name="file"/>
                     </form>

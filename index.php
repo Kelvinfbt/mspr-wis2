@@ -19,7 +19,6 @@ $posts = getPosts();
                     <?php require_once 'template-parts/post-form.php'; ?>
                     <hr>
                     <h3 class="text-center mb-5">Dernières publications :</h3>
-
                     <?php if ($posts): ?>
                     <div class="posts-wrapper mx-auto" style="max-width: 500px;">
                         <div class="row g-4">
@@ -36,6 +35,7 @@ $posts = getPosts();
                     <?php require_once 'template-parts/layout/right-column.php' ?>
                 </div>
             </div>
+        </div>
     </section>
 </main>
 
